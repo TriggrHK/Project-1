@@ -8,43 +8,43 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/users/guest/t/theath33/cs236/project-1/cmake-build-debug-schizo"/>
+				<Option working_dir="/users/guest/t/theath33/cs236/Project-1/cmake-build-debug-schizo"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j20 -f &quot;/users/guest/t/theath33/cs236/project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j20 -f &quot;/users/guest/t/theath33/cs236/project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j20 -f &quot;/users/guest/t/theath33/cs236/project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j20 -f &quot;/users/guest/t/theath33/cs236/project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j20 -f &quot;/users/guest/t/theath33/cs236/Project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j20 -f &quot;/users/guest/t/theath33/cs236/Project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j20 -f &quot;/users/guest/t/theath33/cs236/Project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j20 -f &quot;/users/guest/t/theath33/cs236/Project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/users/guest/t/theath33/cs236/project-1/cmake-build-debug-schizo"/>
+				<Option working_dir="/users/guest/t/theath33/cs236/Project-1/cmake-build-debug-schizo"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j20 -f &quot;/users/guest/t/theath33/cs236/project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j20 -f &quot;/users/guest/t/theath33/cs236/project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j20 -f &quot;/users/guest/t/theath33/cs236/project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j20 -f &quot;/users/guest/t/theath33/cs236/project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j20 -f &quot;/users/guest/t/theath33/cs236/Project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j20 -f &quot;/users/guest/t/theath33/cs236/Project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j20 -f &quot;/users/guest/t/theath33/cs236/Project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j20 -f &quot;/users/guest/t/theath33/cs236/Project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/users/guest/t/theath33/cs236/project-1/cmake-build-debug-schizo"/>
+				<Option working_dir="/users/guest/t/theath33/cs236/Project-1/cmake-build-debug-schizo"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j20 -f &quot;/users/guest/t/theath33/cs236/project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j20 -f &quot;/users/guest/t/theath33/cs236/project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j20 -f &quot;/users/guest/t/theath33/cs236/project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j20 -f &quot;/users/guest/t/theath33/cs236/project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j20 -f &quot;/users/guest/t/theath33/cs236/Project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j20 -f &quot;/users/guest/t/theath33/cs236/Project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j20 -f &quot;/users/guest/t/theath33/cs236/Project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j20 -f &quot;/users/guest/t/theath33/cs236/Project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Project_1">
-				<Option output="/users/guest/t/theath33/cs236/project-1/cmake-build-debug-schizo/Project_1" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir=""/>
+				<Option output="/users/guest/t/theath33/cs236/Project-1/cmake-build-debug-schizo/Project_1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/users/guest/t/theath33/cs236/Project-1/cmake-build-debug-schizo"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/users/guest/t/theath33/cs236/project-1/."/>
+					<Add directory="/users/guest/t/theath33/cs236/Project-1/."/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -54,20 +54,20 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j20 -f &quot;/users/guest/t/theath33/cs236/project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 Project_1"/>
-					<CompileFile command="/usr/bin/make -j20 -f &quot;/users/guest/t/theath33/cs236/project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j20 -f &quot;/users/guest/t/theath33/cs236/project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j20 -f &quot;/users/guest/t/theath33/cs236/project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j20 -f &quot;/users/guest/t/theath33/cs236/Project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 Project_1"/>
+					<CompileFile command="/usr/bin/make -j20 -f &quot;/users/guest/t/theath33/cs236/Project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j20 -f &quot;/users/guest/t/theath33/cs236/Project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j20 -f &quot;/users/guest/t/theath33/cs236/Project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Project_1/fast">
-				<Option output="/users/guest/t/theath33/cs236/project-1/cmake-build-debug-schizo/Project_1" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir=""/>
+				<Option output="/users/guest/t/theath33/cs236/Project-1/cmake-build-debug-schizo/Project_1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/users/guest/t/theath33/cs236/Project-1/cmake-build-debug-schizo"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/users/guest/t/theath33/cs236/project-1/."/>
+					<Add directory="/users/guest/t/theath33/cs236/Project-1/."/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -77,134 +77,134 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j20 -f &quot;/users/guest/t/theath33/cs236/project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 Project_1/fast"/>
-					<CompileFile command="/usr/bin/make -j20 -f &quot;/users/guest/t/theath33/cs236/project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j20 -f &quot;/users/guest/t/theath33/cs236/project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j20 -f &quot;/users/guest/t/theath33/cs236/project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j20 -f &quot;/users/guest/t/theath33/cs236/Project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 Project_1/fast"/>
+					<CompileFile command="/usr/bin/make -j20 -f &quot;/users/guest/t/theath33/cs236/Project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j20 -f &quot;/users/guest/t/theath33/cs236/Project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j20 -f &quot;/users/guest/t/theath33/cs236/Project-1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/users/guest/t/theath33/cs236/project-1/AddAuto.cpp">
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/AddAuto.cpp">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/t/theath33/cs236/project-1/AddAuto.h">
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/AddAuto.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/t/theath33/cs236/project-1/Automaton.h">
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/Automaton.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/t/theath33/cs236/project-1/ColonAuto.cpp">
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/ColonAuto.cpp">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/t/theath33/cs236/project-1/ColonAuto.h">
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/ColonAuto.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/t/theath33/cs236/project-1/ColonDashAuto.cpp">
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/ColonDashAuto.cpp">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/t/theath33/cs236/project-1/ColonDashAuto.h">
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/ColonDashAuto.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/t/theath33/cs236/project-1/CommaAuto.cpp">
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/CommaAuto.cpp">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/t/theath33/cs236/project-1/CommaAuto.h">
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/CommaAuto.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/t/theath33/cs236/project-1/CommentAuto.cpp">
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/CommentAuto.cpp">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/t/theath33/cs236/project-1/CommentAuto.h">
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/CommentAuto.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/t/theath33/cs236/project-1/EOF_CPAuto.cpp">
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/EOF_CPAuto.cpp">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/t/theath33/cs236/project-1/EOF_CPAuto.h">
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/EOF_CPAuto.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/t/theath33/cs236/project-1/FactsAuto.cpp">
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/FactsAuto.cpp">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/t/theath33/cs236/project-1/FactsAuto.h">
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/FactsAuto.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/t/theath33/cs236/project-1/IdAuto.cpp">
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/IdAuto.cpp">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/t/theath33/cs236/project-1/IdAuto.h">
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/IdAuto.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/t/theath33/cs236/project-1/LP_Auto.cpp">
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/LP_Auto.cpp">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/t/theath33/cs236/project-1/LP_Auto.h">
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/LP_Auto.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/t/theath33/cs236/project-1/Lexer.cpp">
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/Lexer.cpp">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/t/theath33/cs236/project-1/Lexer.h">
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/Lexer.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/t/theath33/cs236/project-1/MultAuto.cpp">
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/MultAuto.cpp">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/t/theath33/cs236/project-1/MultAuto.h">
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/MultAuto.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/t/theath33/cs236/project-1/PeriodAuto.cpp">
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/PeriodAuto.cpp">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/t/theath33/cs236/project-1/PeriodAuto.h">
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/PeriodAuto.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/t/theath33/cs236/project-1/Q_MarkAuto.cpp">
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/Q_MarkAuto.cpp">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/t/theath33/cs236/project-1/Q_MarkAuto.h">
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/Q_MarkAuto.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/t/theath33/cs236/project-1/QueriesAuto.cpp">
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/QueriesAuto.cpp">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/t/theath33/cs236/project-1/QueriesAuto.h">
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/QueriesAuto.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/t/theath33/cs236/project-1/RP_Auto.cpp">
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/RP_Auto.cpp">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/t/theath33/cs236/project-1/RP_Auto.h">
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/RP_Auto.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/t/theath33/cs236/project-1/RulesAuto.cpp">
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/RulesAuto.cpp">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/t/theath33/cs236/project-1/RulesAuto.h">
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/RulesAuto.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/t/theath33/cs236/project-1/SchemesAuto.cpp">
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/SchemesAuto.cpp">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/t/theath33/cs236/project-1/SchemesAuto.h">
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/SchemesAuto.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/t/theath33/cs236/project-1/StringAuto.cpp">
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/StringAuto.cpp">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/t/theath33/cs236/project-1/StringAuto.h">
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/StringAuto.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/t/theath33/cs236/project-1/Token.cpp">
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/Token.cpp">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/t/theath33/cs236/project-1/Token.h">
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/Token.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/t/theath33/cs236/project-1/main.cpp">
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/main.cpp">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/t/theath33/cs236/project-1/CMakeLists.txt">
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
