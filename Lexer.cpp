@@ -66,7 +66,6 @@ void Lexer::Run(std::string& input) {
             if (inputRead >= maxRead) {
                 maxRead = inputRead;
                 maxAutomaton = automata[i];
-                //new lines read = machine.newLinesRead()
             }
         }
         if (maxRead > 0) {
@@ -92,7 +91,6 @@ void Lexer::Run(std::string& input) {
     for(int i = 0; i < (int)tokens.size(); i++) {
         std::cout << "(" << tokens[i]->codeToString() << ",\"" << tokens[i]->getDesc() << "\","
                   << tokens[i]->getLineNum() << ")" << "\n";
-     //std::cout << i << " token is " << tokens[i]->codeToString() << "\n";
     }
     std::cout << "Total Tokens = " << tokens.size();
 }

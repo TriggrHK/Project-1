@@ -6,9 +6,13 @@
 void UndefinedAuto::S0(const std::string& input) {
     if (!input.empty()) {
         if (input[0] == '\'') {
+            inputRead++;
+            index++;
             S1(input.substr(1));
         }
         else if (input[0] == '#'){
+            inputRead++;
+            index++;
             S3(input.substr(1));
         }
         else {
