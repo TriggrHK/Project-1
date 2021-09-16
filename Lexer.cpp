@@ -88,7 +88,7 @@ void Lexer::Run(std::string& input) {
         }
     }
     //add end of file token to all tokens
-    for(int i = 0; i < tokens.size(); i++) {
+    for(int i = 0; i < (int)tokens.size(); i++) {
         std::cout << "(" << tokens[i]->codeToString() << ", \"" << tokens[i]->getDesc() << "\" ,"
                   << tokens[i]->getLineNum() << ")" << "\n";
     }
