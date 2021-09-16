@@ -11,7 +11,7 @@ Lexer::Lexer() {
 Lexer::~Lexer() {
     // TODO: need to clean up the memory in `automata` and `tokens` del all parts in array
     while ((int)automata.size() >= 0){
-        delete automata[automata.size()];
+       // delete automata[automata.size()];
         automata.pop_back();
     }
     while ((int)tokens.size() >= 0){

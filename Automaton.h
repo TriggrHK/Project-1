@@ -16,7 +16,6 @@ public:
     Automaton() : Automaton(TokenType::UNDEFINED) {}
 
     Automaton(TokenType type) { this->type = type; }
-
     // Start the automaton and return the number of characters read
     //   read == 0 indicates the input was rejected
     //   read  > 0 indicates the input was accepted
