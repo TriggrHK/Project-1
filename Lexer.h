@@ -37,7 +37,7 @@ public:
     void Run(std::string& input);
   //  std::vector<Token*> outputList();
     // TODO: add other public methods here
-    void toString();
+   // void toString();
 };
 
 #endif // LEXER_H

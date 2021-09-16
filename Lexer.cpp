@@ -15,7 +15,7 @@ Lexer::~Lexer() {
         automata.pop_back();
     }
     while ((int)tokens.size() >= 0){
-        delete tokens[tokens.size()];
+       // delete tokens[tokens.size()];
         tokens.pop_back();
     }
 }
@@ -58,8 +58,6 @@ void Lexer::Run(std::string& input) {
             }
             input = input.substr(1);
         }
-
-
         // Here is the "Parallel" part of the algorithm
         //   Each automaton runs with the same input
         for(int i = 0; i < ((int)automata.size())-1; i++) {
@@ -90,15 +88,8 @@ void Lexer::Run(std::string& input) {
         }
     }
     //add end of file token to all tokens
-   // Token EOFToken = this->CreateToken("UNDEFINED", lineNumber);
-    //tokens.push_back();
-}
-
-
-void Lexer::toString(){
-    std::string tokenList;
-    for(unsigned int i = 0; i < tokens.size(); i++){
-        std::cout << "(" << tokens[i]->codeToString() << ", \"" << tokens[i]->getDesc() << "\" ," << tokens[i]->getLineNum() << ")" << "\n";
+    for(int i = 0; i < tokens.size(); i++) {
+        std::cout << "(" << tokens[i]->codeToString() << ", \"" << tokens[i]->getDesc() << "\" ,"
+                  << tokens[i]->getLineNum() << ")" << "\n";
     }
 }
-
