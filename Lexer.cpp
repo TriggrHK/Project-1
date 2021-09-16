@@ -93,5 +93,5 @@ void Lexer::Run(std::string& input) {
                   << tokens[i]->getLineNum() << ")" << "\n";
      //std::cout << i << " token is " << tokens[i]->codeToString() << "\n";
     }
-    std::cout << "Total Tokens = " << tokens.size() << "\n";
+    std::cout << "Total Tokens = " << tokens.size();
 }
