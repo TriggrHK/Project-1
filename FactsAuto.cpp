@@ -15,7 +15,7 @@ void FactsAuto::S0(const std::string& input) {
     }
 }
 void FactsAuto::S1(const std::string& input) {
-    if (input[index] == 'A') {
+    if (input[index] == 'a') {
         inputRead++;
         index++;
         S2(input);
@@ -25,7 +25,7 @@ void FactsAuto::S1(const std::string& input) {
     }
 }
 void FactsAuto::S2(const std::string& input) {
-    if (input[index] == 'C') {
+    if (input[index] == 'c') {
         inputRead++;
         index++;
         S3(input);
@@ -35,7 +35,7 @@ void FactsAuto::S2(const std::string& input) {
     }
 }
 void FactsAuto::S3(const std::string& input) {
-    if (input[index] == 'T') {
+    if (input[index] == 't') {
         inputRead++;
         index++;
         S4(input);
@@ -45,7 +45,7 @@ void FactsAuto::S3(const std::string& input) {
     }
 }
 void FactsAuto::S4(const std::string& input) {
-    if (input[index] == 'S') {
+    if (input[index] == 's') {
         inputRead++;
         index++;
     }

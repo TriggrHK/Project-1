@@ -14,7 +14,7 @@ void QueriesAuto::S0(const std::string& input) {
     }
 }
 void QueriesAuto::S1(const std::string& input) {
-    if (input[index] == 'U') {
+    if (input[index] == 'u') {
         inputRead++;
         index++;
         S2(input);
@@ -24,7 +24,7 @@ void QueriesAuto::S1(const std::string& input) {
     }
 }
 void QueriesAuto::S2(const std::string& input) {
-    if (input[index] == 'E') {
+    if (input[index] == 'e') {
         inputRead++;
         index++;
         S3(input);
@@ -34,7 +34,7 @@ void QueriesAuto::S2(const std::string& input) {
     }
 }
 void QueriesAuto::S3(const std::string& input) {
-    if (input[index] == 'R') {
+    if (input[index] == 'r') {
         inputRead++;
         index++;
         S4(input);
@@ -44,7 +44,7 @@ void QueriesAuto::S3(const std::string& input) {
     }
 }
 void QueriesAuto::S4(const std::string& input) {
-    if (input[index] == 'I') {
+    if (input[index] == 'i') {
         inputRead++;
         index++;
         S5(input);
@@ -54,7 +54,7 @@ void QueriesAuto::S4(const std::string& input) {
     }
 }
 void QueriesAuto::S5(const std::string& input) {
-    if (input[index] == 'E') {
+    if (input[index] == 'e') {
         inputRead++;
         index++;
         S6(input);
@@ -64,7 +64,7 @@ void QueriesAuto::S5(const std::string& input) {
     }
 }
 void QueriesAuto::S6(const std::string& input) {
-    if (input[index] == 'S') {
+    if (input[index] == 's') {
         inputRead++;
         index++;
     }

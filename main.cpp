@@ -9,7 +9,7 @@ int main(int argc, char** argv) {
     if (inFile.is_open()){
         while ( getline (inFile,line) ){
             inputLines += line + "\n";
-            std::cout << line << '\n';
+           // std::cout << line << '\n';
         }
         inFile.close();
         //std::cout << "whole file is" << "\n" << inputLines;

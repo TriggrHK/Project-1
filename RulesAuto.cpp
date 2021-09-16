@@ -14,7 +14,7 @@ void RulesAuto::S0(const std::string& input) {
     }
 }
 void RulesAuto::S1(const std::string& input) {
-    if (input[index] == 'U') {
+    if (input[index] == 'u') {
         inputRead++;
         index++;
         S2(input);
@@ -24,7 +24,7 @@ void RulesAuto::S1(const std::string& input) {
     }
 }
 void RulesAuto::S2(const std::string& input) {
-    if (input[index] == 'L') {
+    if (input[index] == 'l') {
         inputRead++;
         index++;
         S3(input);
@@ -34,7 +34,7 @@ void RulesAuto::S2(const std::string& input) {
     }
 }
 void RulesAuto::S3(const std::string& input) {
-    if (input[index] == 'E') {
+    if (input[index] == 'e') {
         inputRead++;
         index++;
         S4(input);
@@ -44,7 +44,7 @@ void RulesAuto::S3(const std::string& input) {
     }
 }
 void RulesAuto::S4(const std::string& input) {
-    if (input[index] == 'S') {
+    if (input[index] == 's') {
         inputRead++;
         index++;
     }
