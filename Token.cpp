@@ -25,6 +25,7 @@ std::string Token::codeToString(){
         case TokenType::SCHEMES: return "SCHEMES"; break;
         case TokenType::STRING: return "STRING"; break;
         case TokenType::RULES: return "RULES"; break;
+        case TokenType::UNDEFINED: return "UNDEFINED"; break;
     }
     return "ERROR";
 }
