@@ -21,6 +21,7 @@ Lexer::~Lexer() {
 }
 
 void Lexer::CreateAutomata() {
+    automata.push_back(new UndefinedAuto());
     automata.push_back(new ColonAuto());
     automata.push_back(new ColonDashAuto());
     automata.push_back(new IdAuto());

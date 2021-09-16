@@ -20,6 +20,7 @@
 #include "FactsAuto.h"
 #include "AddAuto.h"
 #include "MultAuto.h"
+#include "UndefinedAuto.h"
 
 class Lexer
 {

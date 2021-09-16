@@ -636,6 +636,33 @@ Token.cpp.s:
 	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/Token.cpp.s
 .PHONY : Token.cpp.s
 
+UndefinedAuto.o: UndefinedAuto.cpp.o
+
+.PHONY : UndefinedAuto.o
+
+# target to build an object file
+UndefinedAuto.cpp.o:
+	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/UndefinedAuto.cpp.o
+.PHONY : UndefinedAuto.cpp.o
+
+UndefinedAuto.i: UndefinedAuto.cpp.i
+
+.PHONY : UndefinedAuto.i
+
+# target to preprocess a source file
+UndefinedAuto.cpp.i:
+	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/UndefinedAuto.cpp.i
+.PHONY : UndefinedAuto.cpp.i
+
+UndefinedAuto.s: UndefinedAuto.cpp.s
+
+.PHONY : UndefinedAuto.s
+
+# target to generate assembly for a file
+UndefinedAuto.cpp.s:
+	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/UndefinedAuto.cpp.s
+.PHONY : UndefinedAuto.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -729,6 +756,9 @@ help:
 	@echo "... Token.o"
 	@echo "... Token.i"
 	@echo "... Token.s"
+	@echo "... UndefinedAuto.o"
+	@echo "... UndefinedAuto.i"
+	@echo "... UndefinedAuto.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -201,6 +201,12 @@
 		<Unit filename="/users/guest/t/theath33/cs236/Project-1/Token.h">
 			<Option target="Project_1"/>
 		</Unit>
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/UndefinedAuto.cpp">
+			<Option target="Project_1"/>
+		</Unit>
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/UndefinedAuto.h">
+			<Option target="Project_1"/>
+		</Unit>
 		<Unit filename="/users/guest/t/theath33/cs236/Project-1/main.cpp">
 			<Option target="Project_1"/>
 		</Unit>

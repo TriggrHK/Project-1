@@ -18,6 +18,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Project_1.dir/SchemesAuto.cpp.o"
   "CMakeFiles/Project_1.dir/StringAuto.cpp.o"
   "CMakeFiles/Project_1.dir/Token.cpp.o"
+  "CMakeFiles/Project_1.dir/UndefinedAuto.cpp.o"
   "CMakeFiles/Project_1.dir/main.cpp.o"
   "Project_1"
   "Project_1.pdb"

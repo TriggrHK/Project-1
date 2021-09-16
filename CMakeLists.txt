@@ -40,4 +40,4 @@ add_executable(Project_1
         RP_Auto.cpp
         RulesAuto.cpp
         SchemesAuto.cpp
-        StringAuto.cpp MultAuto.cpp MultAuto.h AddAuto.cpp AddAuto.h FactsAuto.cpp FactsAuto.h)
+        StringAuto.cpp MultAuto.cpp MultAuto.h AddAuto.cpp AddAuto.h FactsAuto.cpp FactsAuto.h UndefinedAuto.cpp UndefinedAuto.h)
