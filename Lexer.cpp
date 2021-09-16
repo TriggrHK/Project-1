@@ -73,22 +73,22 @@ void Lexer::Run(std::string& input) {
             Token *newToken = maxAutomaton->CreateToken(input.substr(0, maxRead), lineNumber);
             lineNumber += maxAutomaton->NewLinesRead();
             tokens.push_back(newToken);
-        } else {
+        }
+        /*else {
             maxRead = 1;
             Token *undefinedToken = maxAutomaton->CreateToken("UNDEFINED", lineNumber);
-            //(with first character of input)
             tokens.push_back(undefinedToken);
-        }
+        }*/
         if (!input.empty()) {
             input = input.substr(maxRead);
         }
     }
-    // Here is the "Max" part of the algorithm
+ /*   // Here is the "Max" part of the algorithm
     // No automaton accepted input
     // Create single character undefined token
     // Update `input` by removing characters read to create Token
 
-    //add end of file token to all tokens
+    //add end of file token to all tokens*/
     for(int i = 0; i < (int)tokens.size(); i++) {
         std::cout << "(" << tokens[i]->codeToString() << ",\"" << tokens[i]->getDesc() << "\","
                   << tokens[i]->getLineNum() << ")" << "\n";
