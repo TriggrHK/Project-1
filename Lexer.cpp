@@ -61,7 +61,7 @@ void Lexer::Run(std::string& input) {
         // Here is the "Parallel" part of the algorithm
         //   Each automaton runs with the same input
         if(!input.empty()) {
-            for (int i = 0; i < automata.size(); i++) {
+            for (int i = 0; i < (int)automata.size(); i++) {
                 int inputRead = automata[i]->Start(input);
                 if (inputRead >= maxRead) {
                     maxRead = inputRead;
