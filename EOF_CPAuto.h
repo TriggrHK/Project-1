@@ -8,6 +8,10 @@
 
 class EOF_CPAuto : public Automaton
 {
+private:
+    void S1(const std::string& input);
+    void S2(const std::string& input);
+
 public:
     EOF_CPAuto() : Automaton(TokenType::EOF_CP) {}
     void S0(const std::string& input);

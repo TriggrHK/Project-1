@@ -1,6 +1,6 @@
 #include "Lexer.h"
-#include "fstream"
-#include "iostream"
+#include <fstream>
+#include <iostream>
 
 int main(int argc, char** argv) {
     std::string inputLines;
@@ -14,8 +14,11 @@ int main(int argc, char** argv) {
         inFile.close();
         //std::cout << "whole file is" << "\n" << inputLines;
     }
-    else std::cout << "Unable to open file";
-    Lexer* lexer = new Lexer();
+    else {
+        std::cout << "Unable to open file";
+    }
+
+    auto* lexer = new Lexer();
 
     // TODO
     lexer->Run(inputLines);
@@ -23,6 +26,5 @@ int main(int argc, char** argv) {
     // get the tokens from lexer and output in the right format
    // std::cout << "Did it!";
     delete lexer;
-
     return 0;
 }

@@ -1,6 +1,6 @@
 #include "Lexer.h"
-#include "iostream"
-#include "cctype"
+#include <iostream>
+#include <cctype>
 
 Lexer::Lexer() {
     tokens = std::vector<Token*>();
@@ -46,10 +46,10 @@ void Lexer::Run(std::string& input) {
 
     int lineNumber = 1;
     // While there are more characters to tokenize
-    while (input.size() > 0) {
+    while (!input.empty()) {
 
         int maxRead = 0;
-        Automaton* maxAutomaton = automata[0];
+        Automaton *maxAutomaton = automata[0];
 
         // TODO: you need to handle whitespace in between tokens
         if (isspace(input[0])) {
@@ -60,36 +60,42 @@ void Lexer::Run(std::string& input) {
         }
         // Here is the "Parallel" part of the algorithm
         //   Each automaton runs with the same input
-        for(int i = 0; i < ((int)automata.size())-1; i++) {
-            int inputRead = automata[i]->Start(input);
-            if (inputRead > maxRead) {
-                maxRead = inputRead;
-                maxAutomaton = automata[i];
-                //new lines read = machine.newlinesread()
+        if(!input.empty()) {
+            for (int i = 0; i < (automata.size() - 1); i++) {
+                int inputRead = automata[i]->Start(input);
+                if (inputRead > maxRead) {
+                    maxRead = inputRead;
+                    maxAutomaton = automata[i];
+                    //new lines read = machine.newLinesRead()
+                }
             }
+            if (maxRead > 0) {
+                Token newToken = *maxAutomaton->CreateToken(input.substr(0,maxRead), lineNumber);
+                lineNumber += maxAutomaton->NewLinesRead();
+                tokens.push_back(&newToken);
+            }
+            else {
+                maxRead = 1;
+                Token undefinedToken = *maxAutomaton->CreateToken("UNDEFINED", lineNumber);
+                //(with first character of input)
+                tokens.push_back(&undefinedToken);
+            }
+            input = input.substr(maxRead);
         }
         // Here is the "Max" part of the algorithm
-        if (maxRead > 0) {
-            Token newToken = *maxAutomaton->CreateToken(input, lineNumber);
-            lineNumber += maxAutomaton->NewLinesRead();
-            tokens.push_back(&newToken);
-        }
         // No automaton accepted input
         // Create single character undefined token
         else {
-            maxRead = 1;
-            Token undefinedToken = *maxAutomaton->CreateToken("UNDEFINED", lineNumber);
-            //(with first character of input)
-            tokens.push_back(&undefinedToken);
+            Token EOFToken = *maxAutomaton->CreateToken("EOF", lineNumber);
+            tokens.push_back(&EOFToken);
         }
         // Update `input` by removing characters read to create Token
-        if(!input.empty()) {
-            input = input.substr(maxRead);
-        }
     }
     //add end of file token to all tokens
     for(int i = 0; i < (int)tokens.size(); i++) {
-        std::cout << "(" << tokens[i]->codeToString() << ", \"" << tokens[i]->getDesc() << "\" ,"
-                  << tokens[i]->getLineNum() << ")" << "\n";
+     /*   std::cout << "(" << tokens[i]->codeToString() << ", \"" << tokens[i]->getDesc() << "\" ,"
+                  << tokens[i]->getLineNum() << ")" << "\n";*/
+     std::cout << i << " token is " << tokens[i]->codeToString() << "\n";
     }
+    std::cout << "Total Tokens: " << tokens.size() << "\n";
 }
