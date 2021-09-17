@@ -77,6 +77,14 @@ void Lexer::Run(std::string& input) {
             input = input.substr(maxRead);
         }
         if (input.empty() && tokens[(int)tokens.size()-1]->codeToString() != "EOF") {
+            maxRead = 0;
+            for (int i = 0; i < (int) automata.size(); i++) {
+                int inputRead = automata[i]->Start("");
+                if (inputRead >= maxRead) {
+                    maxRead = inputRead;
+                    maxAutomaton = automata[i];
+                }
+            }
             Token *eofToken = maxAutomaton->CreateToken("", lineNumber);
             tokens.push_back(eofToken);
         }
