@@ -73,13 +73,12 @@ void Lexer::Run(std::string& input) {
             lineNumber += maxAutomaton->NewLinesRead();
             tokens.push_back(newToken);
         }
-        /*else {
-            maxRead = 1;
-            Token *undefinedToken = maxAutomaton->CreateToken("UNDEFINED", lineNumber);
-            tokens.push_back(undefinedToken);
-        }*/
         if (!input.empty()) {
             input = input.substr(maxRead);
+        }
+        if (input.empty() && tokens[(int)tokens.size()-1]->codeToString() != "EOF") {
+            Token *eofToken = maxAutomaton->CreateToken("", lineNumber);
+            tokens.push_back(eofToken);
         }
     }
  /*   // Here is the "Max" part of the algorithm
