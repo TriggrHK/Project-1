@@ -17,7 +17,7 @@ void CommentAuto::S1(const std::string& input) {
     if (input[index] == '|') {
         inputRead++;
         index++;
-        S2(input);
+        S2(input.substr(2));
     }
     else {
         while (input[index] != '\n'){
