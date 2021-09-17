@@ -68,6 +68,7 @@ CMakeFiles/Project_1.dir/Lexer.cpp.o
  /users/guest/t/theath33/cs236/Project-1/SchemesAuto.h
  /users/guest/t/theath33/cs236/Project-1/StringAuto.h
  /users/guest/t/theath33/cs236/Project-1/Token.h
+ /users/guest/t/theath33/cs236/Project-1/UndefinedAuto.h
 CMakeFiles/Project_1.dir/MultAuto.cpp.o
  /users/guest/t/theath33/cs236/Project-1/Automaton.h
  /users/guest/t/theath33/cs236/Project-1/MultAuto.cpp
@@ -111,6 +112,11 @@ CMakeFiles/Project_1.dir/StringAuto.cpp.o
 CMakeFiles/Project_1.dir/Token.cpp.o
  /users/guest/t/theath33/cs236/Project-1/Token.cpp
  /users/guest/t/theath33/cs236/Project-1/Token.h
+CMakeFiles/Project_1.dir/UndefinedAuto.cpp.o
+ /users/guest/t/theath33/cs236/Project-1/Automaton.h
+ /users/guest/t/theath33/cs236/Project-1/Token.h
+ /users/guest/t/theath33/cs236/Project-1/UndefinedAuto.cpp
+ /users/guest/t/theath33/cs236/Project-1/UndefinedAuto.h
 CMakeFiles/Project_1.dir/main.cpp.o
  /users/guest/t/theath33/cs236/Project-1/AddAuto.h
  /users/guest/t/theath33/cs236/Project-1/Automaton.h
@@ -132,4 +138,5 @@ CMakeFiles/Project_1.dir/main.cpp.o
  /users/guest/t/theath33/cs236/Project-1/SchemesAuto.h
  /users/guest/t/theath33/cs236/Project-1/StringAuto.h
  /users/guest/t/theath33/cs236/Project-1/Token.h
+ /users/guest/t/theath33/cs236/Project-1/UndefinedAuto.h
  /users/guest/t/theath33/cs236/Project-1/main.cpp

@@ -67,6 +67,7 @@ CMakeFiles/Project_1.dir/Lexer.cpp.o: ../RulesAuto.h
 CMakeFiles/Project_1.dir/Lexer.cpp.o: ../SchemesAuto.h
 CMakeFiles/Project_1.dir/Lexer.cpp.o: ../StringAuto.h
 CMakeFiles/Project_1.dir/Lexer.cpp.o: ../Token.h
+CMakeFiles/Project_1.dir/Lexer.cpp.o: ../UndefinedAuto.h
 
 CMakeFiles/Project_1.dir/MultAuto.cpp.o: ../Automaton.h
 CMakeFiles/Project_1.dir/MultAuto.cpp.o: ../MultAuto.cpp
@@ -111,6 +112,11 @@ CMakeFiles/Project_1.dir/StringAuto.cpp.o: ../Token.h
 CMakeFiles/Project_1.dir/Token.cpp.o: ../Token.cpp
 CMakeFiles/Project_1.dir/Token.cpp.o: ../Token.h
 
+CMakeFiles/Project_1.dir/UndefinedAuto.cpp.o: ../Automaton.h
+CMakeFiles/Project_1.dir/UndefinedAuto.cpp.o: ../Token.h
+CMakeFiles/Project_1.dir/UndefinedAuto.cpp.o: ../UndefinedAuto.cpp
+CMakeFiles/Project_1.dir/UndefinedAuto.cpp.o: ../UndefinedAuto.h
+
 CMakeFiles/Project_1.dir/main.cpp.o: ../AddAuto.h
 CMakeFiles/Project_1.dir/main.cpp.o: ../Automaton.h
 CMakeFiles/Project_1.dir/main.cpp.o: ../ColonAuto.h
@@ -131,5 +137,6 @@ CMakeFiles/Project_1.dir/main.cpp.o: ../RulesAuto.h
 CMakeFiles/Project_1.dir/main.cpp.o: ../SchemesAuto.h
 CMakeFiles/Project_1.dir/main.cpp.o: ../StringAuto.h
 CMakeFiles/Project_1.dir/main.cpp.o: ../Token.h
+CMakeFiles/Project_1.dir/main.cpp.o: ../UndefinedAuto.h
 CMakeFiles/Project_1.dir/main.cpp.o: ../main.cpp
 
