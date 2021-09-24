@@ -47,8 +47,7 @@ void Lexer::Run(std::string& input) {
 
     int lineNumber = 1;
     // While there are more characters to tokenize
-    while (!input.empty()) {
-
+    do {
         int maxRead = 0;
         Automaton *maxAutomaton = automata[0];
 
@@ -88,13 +87,9 @@ void Lexer::Run(std::string& input) {
             Token *eofToken = maxAutomaton->CreateToken("", lineNumber);
             tokens.push_back(eofToken);
         }
-    }
- /*   // Here is the "Max" part of the algorithm
-    // No automaton accepted input
-    // Create single character undefined token
-    // Update `input` by removing characters read to create Token
+    } while (!input.empty());
 
-    //add end of file token to all tokens*/
+       //add end of file token to all tokens*/
     for(int i = 0; i < (int)tokens.size(); i++) {
         std::cout << "(" << tokens[i]->codeToString() << ",\"" << tokens[i]->getDesc() << "\","
                   << tokens[i]->getLineNum() << ")" << "\n";
