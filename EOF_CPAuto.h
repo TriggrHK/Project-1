@@ -10,6 +10,14 @@ class EOF_CPAuto : public Automaton
 {
 public:
     EOF_CPAuto() : Automaton(TokenType::EOF_CP) {}
-    void S0(const std::string& input);
+    void S0(const std::string& input) {
+        if (input.empty()) {
+            inputRead = 1;
+            index++;
+        }
+        else {
+            Serr();
+        }
+    }
 };
 #endif //EOF_CPAUTO_H

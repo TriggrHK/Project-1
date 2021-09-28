@@ -89,10 +89,14 @@ void Lexer::Run(std::string& input) {
         }
     } while (!input.empty());
 
-       //add end of file token to all tokens*/
-    for(int i = 0; i < (int)tokens.size(); i++) {
+       //Print out Lexer format
+/*   for(int i = 0; i < (int)tokens.size(); i++) {
         std::cout << "(" << tokens[i]->codeToString() << ",\"" << tokens[i]->getDesc() << "\","
                   << tokens[i]->getLineNum() << ")" << "\n";
     }
-    std::cout << "Total Tokens = " << tokens.size();
+    std::cout << "Total Tokens = " << tokens.size();*/
+}
+
+std::vector<Token*> Lexer::getTokenList() {
+    return tokens;
 }

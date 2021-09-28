@@ -10,6 +10,13 @@ class Q_MarkAuto : public Automaton
 {
 public:
     Q_MarkAuto() : Automaton(TokenType::Q_MARK) {}
-    void S0(const std::string& input);
+    void S0(const std::string& input) {
+        if (input[index] == '?') {
+            inputRead = 1;
+        }
+        else {
+            Serr();
+        }
+    }
 };
 #endif //Q_MARKAUTO_H

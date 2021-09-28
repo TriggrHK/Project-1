@@ -10,6 +10,13 @@ class RP_Auto : public Automaton
 {
 public:
     RP_Auto() : Automaton(TokenType::RIGHT_PAREN) {}
-    void S0(const std::string& input);
+    void S0(const std::string& input) {
+        if (input[index] == ')') {
+            inputRead = 1;
+        }
+        else {
+            Serr();
+        }
+    }
 };
 #endif //RP_AUTO_H

@@ -10,6 +10,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Project_1.dir/LP_Auto.cpp.o"
   "CMakeFiles/Project_1.dir/Lexer.cpp.o"
   "CMakeFiles/Project_1.dir/MultAuto.cpp.o"
+  "CMakeFiles/Project_1.dir/Parser.cpp.o"
   "CMakeFiles/Project_1.dir/PeriodAuto.cpp.o"
   "CMakeFiles/Project_1.dir/Q_MarkAuto.cpp.o"
   "CMakeFiles/Project_1.dir/QueriesAuto.cpp.o"

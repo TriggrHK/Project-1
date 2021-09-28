@@ -10,6 +10,13 @@ class LP_Auto : public Automaton
 {
 public:
     LP_Auto() : Automaton(TokenType::LEFT_PAREN) {}
-    void S0(const std::string& input);
+    void S0(const std::string& input) {
+        if (input[index] == '(') {
+            inputRead = 1;
+        }
+        else {
+            Serr();
+        }
+    }
 };
 #endif //LP_AUTO_H

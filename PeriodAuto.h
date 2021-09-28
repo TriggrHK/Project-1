@@ -10,6 +10,13 @@ class PeriodAuto : public Automaton
 {
 public:
     PeriodAuto() : Automaton(TokenType::PERIOD) {}
-    void S0(const std::string& input);
+    void S0(const std::string& input) {
+        if (input[index] == '.') {
+            inputRead = 1;
+        }
+        else {
+            Serr();
+        }
+    }
 };
 #endif //PERIODAUTO_H

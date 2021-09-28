@@ -153,6 +153,12 @@
 		<Unit filename="/users/guest/t/theath33/cs236/Project-1/MultAuto.h">
 			<Option target="Project_1"/>
 		</Unit>
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/Parser.cpp">
+			<Option target="Project_1"/>
+		</Unit>
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/Parser.h">
+			<Option target="Project_1"/>
+		</Unit>
 		<Unit filename="/users/guest/t/theath33/cs236/Project-1/PeriodAuto.cpp">
 			<Option target="Project_1"/>
 		</Unit>

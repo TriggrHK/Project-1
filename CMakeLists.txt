@@ -8,7 +8,6 @@ include_directories(.)
 
 add_executable(Project_1
         Automaton.h
-        ColonAuto.cpp
         ColonAuto.h
         ColonDashAuto.cpp
         ColonDashAuto.h
@@ -29,15 +28,9 @@ add_executable(Project_1
         EOF_CPAuto.h
         SchemesAuto.h
         CommentAuto.h
-        CommaAuto.cpp
         CommentAuto.cpp
-        EOF_CPAuto.cpp
         IdAuto.cpp
-        LP_Auto.cpp
-        PeriodAuto.cpp
-        Q_MarkAuto.cpp
         QueriesAuto.cpp
-        RP_Auto.cpp
         RulesAuto.cpp
         SchemesAuto.cpp
-        StringAuto.cpp MultAuto.cpp MultAuto.h AddAuto.cpp AddAuto.h FactsAuto.cpp FactsAuto.h UndefinedAuto.cpp UndefinedAuto.h)
+        StringAuto.cpp MultAuto.h AddAuto.h FactsAuto.cpp FactsAuto.h UndefinedAuto.cpp UndefinedAuto.h Parser.cpp Parser.h)

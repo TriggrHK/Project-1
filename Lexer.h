@@ -39,6 +39,7 @@ public:
   //  std::vector<Token*> outputList();
     // TODO: add other public methods here
    // void toString();
+   std::vector<Token*> getTokenList();
 };
 
 #endif // LEXER_H
