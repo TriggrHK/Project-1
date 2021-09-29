@@ -37,3 +37,12 @@ int Token::getLineNum() {
     return inLineNum;
 }
 
+bool Token::match(TokenType x) {
+    if (inType == x) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+

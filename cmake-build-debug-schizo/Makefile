@@ -123,60 +123,6 @@ Project_1/fast:
 	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/build
 .PHONY : Project_1/fast
 
-AddAuto.o: AddAuto.cpp.o
-
-.PHONY : AddAuto.o
-
-# target to build an object file
-AddAuto.cpp.o:
-	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/AddAuto.cpp.o
-.PHONY : AddAuto.cpp.o
-
-AddAuto.i: AddAuto.cpp.i
-
-.PHONY : AddAuto.i
-
-# target to preprocess a source file
-AddAuto.cpp.i:
-	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/AddAuto.cpp.i
-.PHONY : AddAuto.cpp.i
-
-AddAuto.s: AddAuto.cpp.s
-
-.PHONY : AddAuto.s
-
-# target to generate assembly for a file
-AddAuto.cpp.s:
-	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/AddAuto.cpp.s
-.PHONY : AddAuto.cpp.s
-
-ColonAuto.o: ColonAuto.cpp.o
-
-.PHONY : ColonAuto.o
-
-# target to build an object file
-ColonAuto.cpp.o:
-	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/ColonAuto.cpp.o
-.PHONY : ColonAuto.cpp.o
-
-ColonAuto.i: ColonAuto.cpp.i
-
-.PHONY : ColonAuto.i
-
-# target to preprocess a source file
-ColonAuto.cpp.i:
-	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/ColonAuto.cpp.i
-.PHONY : ColonAuto.cpp.i
-
-ColonAuto.s: ColonAuto.cpp.s
-
-.PHONY : ColonAuto.s
-
-# target to generate assembly for a file
-ColonAuto.cpp.s:
-	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/ColonAuto.cpp.s
-.PHONY : ColonAuto.cpp.s
-
 ColonDashAuto.o: ColonDashAuto.cpp.o
 
 .PHONY : ColonDashAuto.o
@@ -204,33 +150,6 @@ ColonDashAuto.cpp.s:
 	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/ColonDashAuto.cpp.s
 .PHONY : ColonDashAuto.cpp.s
 
-CommaAuto.o: CommaAuto.cpp.o
-
-.PHONY : CommaAuto.o
-
-# target to build an object file
-CommaAuto.cpp.o:
-	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/CommaAuto.cpp.o
-.PHONY : CommaAuto.cpp.o
-
-CommaAuto.i: CommaAuto.cpp.i
-
-.PHONY : CommaAuto.i
-
-# target to preprocess a source file
-CommaAuto.cpp.i:
-	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/CommaAuto.cpp.i
-.PHONY : CommaAuto.cpp.i
-
-CommaAuto.s: CommaAuto.cpp.s
-
-.PHONY : CommaAuto.s
-
-# target to generate assembly for a file
-CommaAuto.cpp.s:
-	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/CommaAuto.cpp.s
-.PHONY : CommaAuto.cpp.s
-
 CommentAuto.o: CommentAuto.cpp.o
 
 .PHONY : CommentAuto.o
@@ -257,33 +176,6 @@ CommentAuto.s: CommentAuto.cpp.s
 CommentAuto.cpp.s:
 	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/CommentAuto.cpp.s
 .PHONY : CommentAuto.cpp.s
-
-EOF_CPAuto.o: EOF_CPAuto.cpp.o
-
-.PHONY : EOF_CPAuto.o
-
-# target to build an object file
-EOF_CPAuto.cpp.o:
-	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/EOF_CPAuto.cpp.o
-.PHONY : EOF_CPAuto.cpp.o
-
-EOF_CPAuto.i: EOF_CPAuto.cpp.i
-
-.PHONY : EOF_CPAuto.i
-
-# target to preprocess a source file
-EOF_CPAuto.cpp.i:
-	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/EOF_CPAuto.cpp.i
-.PHONY : EOF_CPAuto.cpp.i
-
-EOF_CPAuto.s: EOF_CPAuto.cpp.s
-
-.PHONY : EOF_CPAuto.s
-
-# target to generate assembly for a file
-EOF_CPAuto.cpp.s:
-	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/EOF_CPAuto.cpp.s
-.PHONY : EOF_CPAuto.cpp.s
 
 FactsAuto.o: FactsAuto.cpp.o
 
@@ -339,33 +231,6 @@ IdAuto.cpp.s:
 	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/IdAuto.cpp.s
 .PHONY : IdAuto.cpp.s
 
-LP_Auto.o: LP_Auto.cpp.o
-
-.PHONY : LP_Auto.o
-
-# target to build an object file
-LP_Auto.cpp.o:
-	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/LP_Auto.cpp.o
-.PHONY : LP_Auto.cpp.o
-
-LP_Auto.i: LP_Auto.cpp.i
-
-.PHONY : LP_Auto.i
-
-# target to preprocess a source file
-LP_Auto.cpp.i:
-	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/LP_Auto.cpp.i
-.PHONY : LP_Auto.cpp.i
-
-LP_Auto.s: LP_Auto.cpp.s
-
-.PHONY : LP_Auto.s
-
-# target to generate assembly for a file
-LP_Auto.cpp.s:
-	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/LP_Auto.cpp.s
-.PHONY : LP_Auto.cpp.s
-
 Lexer.o: Lexer.cpp.o
 
 .PHONY : Lexer.o
@@ -393,32 +258,32 @@ Lexer.cpp.s:
 	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/Lexer.cpp.s
 .PHONY : Lexer.cpp.s
 
-MultAuto.o: MultAuto.cpp.o
+Parameter.o: Parameter.cpp.o
 
-.PHONY : MultAuto.o
+.PHONY : Parameter.o
 
 # target to build an object file
-MultAuto.cpp.o:
-	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/MultAuto.cpp.o
-.PHONY : MultAuto.cpp.o
+Parameter.cpp.o:
+	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/Parameter.cpp.o
+.PHONY : Parameter.cpp.o
 
-MultAuto.i: MultAuto.cpp.i
+Parameter.i: Parameter.cpp.i
 
-.PHONY : MultAuto.i
+.PHONY : Parameter.i
 
 # target to preprocess a source file
-MultAuto.cpp.i:
-	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/MultAuto.cpp.i
-.PHONY : MultAuto.cpp.i
+Parameter.cpp.i:
+	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/Parameter.cpp.i
+.PHONY : Parameter.cpp.i
 
-MultAuto.s: MultAuto.cpp.s
+Parameter.s: Parameter.cpp.s
 
-.PHONY : MultAuto.s
+.PHONY : Parameter.s
 
 # target to generate assembly for a file
-MultAuto.cpp.s:
-	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/MultAuto.cpp.s
-.PHONY : MultAuto.cpp.s
+Parameter.cpp.s:
+	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/Parameter.cpp.s
+.PHONY : Parameter.cpp.s
 
 Parser.o: Parser.cpp.o
 
@@ -447,59 +312,32 @@ Parser.cpp.s:
 	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/Parser.cpp.s
 .PHONY : Parser.cpp.s
 
-PeriodAuto.o: PeriodAuto.cpp.o
+Predicate.o: Predicate.cpp.o
 
-.PHONY : PeriodAuto.o
-
-# target to build an object file
-PeriodAuto.cpp.o:
-	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/PeriodAuto.cpp.o
-.PHONY : PeriodAuto.cpp.o
-
-PeriodAuto.i: PeriodAuto.cpp.i
-
-.PHONY : PeriodAuto.i
-
-# target to preprocess a source file
-PeriodAuto.cpp.i:
-	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/PeriodAuto.cpp.i
-.PHONY : PeriodAuto.cpp.i
-
-PeriodAuto.s: PeriodAuto.cpp.s
-
-.PHONY : PeriodAuto.s
-
-# target to generate assembly for a file
-PeriodAuto.cpp.s:
-	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/PeriodAuto.cpp.s
-.PHONY : PeriodAuto.cpp.s
-
-Q_MarkAuto.o: Q_MarkAuto.cpp.o
-
-.PHONY : Q_MarkAuto.o
+.PHONY : Predicate.o
 
 # target to build an object file
-Q_MarkAuto.cpp.o:
-	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/Q_MarkAuto.cpp.o
-.PHONY : Q_MarkAuto.cpp.o
+Predicate.cpp.o:
+	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/Predicate.cpp.o
+.PHONY : Predicate.cpp.o
 
-Q_MarkAuto.i: Q_MarkAuto.cpp.i
+Predicate.i: Predicate.cpp.i
 
-.PHONY : Q_MarkAuto.i
+.PHONY : Predicate.i
 
 # target to preprocess a source file
-Q_MarkAuto.cpp.i:
-	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/Q_MarkAuto.cpp.i
-.PHONY : Q_MarkAuto.cpp.i
+Predicate.cpp.i:
+	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/Predicate.cpp.i
+.PHONY : Predicate.cpp.i
 
-Q_MarkAuto.s: Q_MarkAuto.cpp.s
+Predicate.s: Predicate.cpp.s
 
-.PHONY : Q_MarkAuto.s
+.PHONY : Predicate.s
 
 # target to generate assembly for a file
-Q_MarkAuto.cpp.s:
-	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/Q_MarkAuto.cpp.s
-.PHONY : Q_MarkAuto.cpp.s
+Predicate.cpp.s:
+	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/Predicate.cpp.s
+.PHONY : Predicate.cpp.s
 
 QueriesAuto.o: QueriesAuto.cpp.o
 
@@ -528,32 +366,32 @@ QueriesAuto.cpp.s:
 	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/QueriesAuto.cpp.s
 .PHONY : QueriesAuto.cpp.s
 
-RP_Auto.o: RP_Auto.cpp.o
+Rule.o: Rule.cpp.o
 
-.PHONY : RP_Auto.o
+.PHONY : Rule.o
 
 # target to build an object file
-RP_Auto.cpp.o:
-	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/RP_Auto.cpp.o
-.PHONY : RP_Auto.cpp.o
+Rule.cpp.o:
+	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/Rule.cpp.o
+.PHONY : Rule.cpp.o
 
-RP_Auto.i: RP_Auto.cpp.i
+Rule.i: Rule.cpp.i
 
-.PHONY : RP_Auto.i
+.PHONY : Rule.i
 
 # target to preprocess a source file
-RP_Auto.cpp.i:
-	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/RP_Auto.cpp.i
-.PHONY : RP_Auto.cpp.i
+Rule.cpp.i:
+	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/Rule.cpp.i
+.PHONY : Rule.cpp.i
 
-RP_Auto.s: RP_Auto.cpp.s
+Rule.s: Rule.cpp.s
 
-.PHONY : RP_Auto.s
+.PHONY : Rule.s
 
 # target to generate assembly for a file
-RP_Auto.cpp.s:
-	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/RP_Auto.cpp.s
-.PHONY : RP_Auto.cpp.s
+Rule.cpp.s:
+	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/Rule.cpp.s
+.PHONY : Rule.cpp.s
 
 RulesAuto.o: RulesAuto.cpp.o
 
@@ -690,6 +528,33 @@ UndefinedAuto.cpp.s:
 	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/UndefinedAuto.cpp.s
 .PHONY : UndefinedAuto.cpp.s
 
+datalogProgram.o: datalogProgram.cpp.o
+
+.PHONY : datalogProgram.o
+
+# target to build an object file
+datalogProgram.cpp.o:
+	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/datalogProgram.cpp.o
+.PHONY : datalogProgram.cpp.o
+
+datalogProgram.i: datalogProgram.cpp.i
+
+.PHONY : datalogProgram.i
+
+# target to preprocess a source file
+datalogProgram.cpp.i:
+	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/datalogProgram.cpp.i
+.PHONY : datalogProgram.cpp.i
+
+datalogProgram.s: datalogProgram.cpp.s
+
+.PHONY : datalogProgram.s
+
+# target to generate assembly for a file
+datalogProgram.cpp.s:
+	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/datalogProgram.cpp.s
+.PHONY : datalogProgram.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -726,54 +591,36 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Project_1"
-	@echo "... AddAuto.o"
-	@echo "... AddAuto.i"
-	@echo "... AddAuto.s"
-	@echo "... ColonAuto.o"
-	@echo "... ColonAuto.i"
-	@echo "... ColonAuto.s"
 	@echo "... ColonDashAuto.o"
 	@echo "... ColonDashAuto.i"
 	@echo "... ColonDashAuto.s"
-	@echo "... CommaAuto.o"
-	@echo "... CommaAuto.i"
-	@echo "... CommaAuto.s"
 	@echo "... CommentAuto.o"
 	@echo "... CommentAuto.i"
 	@echo "... CommentAuto.s"
-	@echo "... EOF_CPAuto.o"
-	@echo "... EOF_CPAuto.i"
-	@echo "... EOF_CPAuto.s"
 	@echo "... FactsAuto.o"
 	@echo "... FactsAuto.i"
 	@echo "... FactsAuto.s"
 	@echo "... IdAuto.o"
 	@echo "... IdAuto.i"
 	@echo "... IdAuto.s"
-	@echo "... LP_Auto.o"
-	@echo "... LP_Auto.i"
-	@echo "... LP_Auto.s"
 	@echo "... Lexer.o"
 	@echo "... Lexer.i"
 	@echo "... Lexer.s"
-	@echo "... MultAuto.o"
-	@echo "... MultAuto.i"
-	@echo "... MultAuto.s"
+	@echo "... Parameter.o"
+	@echo "... Parameter.i"
+	@echo "... Parameter.s"
 	@echo "... Parser.o"
 	@echo "... Parser.i"
 	@echo "... Parser.s"
-	@echo "... PeriodAuto.o"
-	@echo "... PeriodAuto.i"
-	@echo "... PeriodAuto.s"
-	@echo "... Q_MarkAuto.o"
-	@echo "... Q_MarkAuto.i"
-	@echo "... Q_MarkAuto.s"
+	@echo "... Predicate.o"
+	@echo "... Predicate.i"
+	@echo "... Predicate.s"
 	@echo "... QueriesAuto.o"
 	@echo "... QueriesAuto.i"
 	@echo "... QueriesAuto.s"
-	@echo "... RP_Auto.o"
-	@echo "... RP_Auto.i"
-	@echo "... RP_Auto.s"
+	@echo "... Rule.o"
+	@echo "... Rule.i"
+	@echo "... Rule.s"
 	@echo "... RulesAuto.o"
 	@echo "... RulesAuto.i"
 	@echo "... RulesAuto.s"
@@ -789,6 +636,9 @@ help:
 	@echo "... UndefinedAuto.o"
 	@echo "... UndefinedAuto.i"
 	@echo "... UndefinedAuto.s"
+	@echo "... datalogProgram.o"
+	@echo "... datalogProgram.i"
+	@echo "... datalogProgram.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

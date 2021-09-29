@@ -90,7 +90,7 @@ void Lexer::Run(std::string& input) {
     } while (!input.empty());
 
        //Print out Lexer format
-/*   for(int i = 0; i < (int)tokens.size(); i++) {
+   /*for(int i = 0; i < (int)tokens.size(); i++) {
         std::cout << "(" << tokens[i]->codeToString() << ",\"" << tokens[i]->getDesc() << "\","
                   << tokens[i]->getLineNum() << ")" << "\n";
     }

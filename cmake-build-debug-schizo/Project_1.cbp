@@ -84,16 +84,10 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/users/guest/t/theath33/cs236/Project-1/AddAuto.cpp">
-			<Option target="Project_1"/>
-		</Unit>
 		<Unit filename="/users/guest/t/theath33/cs236/Project-1/AddAuto.h">
 			<Option target="Project_1"/>
 		</Unit>
 		<Unit filename="/users/guest/t/theath33/cs236/Project-1/Automaton.h">
-			<Option target="Project_1"/>
-		</Unit>
-		<Unit filename="/users/guest/t/theath33/cs236/Project-1/ColonAuto.cpp">
 			<Option target="Project_1"/>
 		</Unit>
 		<Unit filename="/users/guest/t/theath33/cs236/Project-1/ColonAuto.h">
@@ -105,9 +99,6 @@
 		<Unit filename="/users/guest/t/theath33/cs236/Project-1/ColonDashAuto.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/t/theath33/cs236/Project-1/CommaAuto.cpp">
-			<Option target="Project_1"/>
-		</Unit>
 		<Unit filename="/users/guest/t/theath33/cs236/Project-1/CommaAuto.h">
 			<Option target="Project_1"/>
 		</Unit>
@@ -115,9 +106,6 @@
 			<Option target="Project_1"/>
 		</Unit>
 		<Unit filename="/users/guest/t/theath33/cs236/Project-1/CommentAuto.h">
-			<Option target="Project_1"/>
-		</Unit>
-		<Unit filename="/users/guest/t/theath33/cs236/Project-1/EOF_CPAuto.cpp">
 			<Option target="Project_1"/>
 		</Unit>
 		<Unit filename="/users/guest/t/theath33/cs236/Project-1/EOF_CPAuto.h">
@@ -135,9 +123,6 @@
 		<Unit filename="/users/guest/t/theath33/cs236/Project-1/IdAuto.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/t/theath33/cs236/Project-1/LP_Auto.cpp">
-			<Option target="Project_1"/>
-		</Unit>
 		<Unit filename="/users/guest/t/theath33/cs236/Project-1/LP_Auto.h">
 			<Option target="Project_1"/>
 		</Unit>
@@ -147,10 +132,13 @@
 		<Unit filename="/users/guest/t/theath33/cs236/Project-1/Lexer.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/t/theath33/cs236/Project-1/MultAuto.cpp">
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/MultAuto.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/t/theath33/cs236/Project-1/MultAuto.h">
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/Parameter.cpp">
+			<Option target="Project_1"/>
+		</Unit>
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/Parameter.h">
 			<Option target="Project_1"/>
 		</Unit>
 		<Unit filename="/users/guest/t/theath33/cs236/Project-1/Parser.cpp">
@@ -159,13 +147,13 @@
 		<Unit filename="/users/guest/t/theath33/cs236/Project-1/Parser.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/t/theath33/cs236/Project-1/PeriodAuto.cpp">
-			<Option target="Project_1"/>
-		</Unit>
 		<Unit filename="/users/guest/t/theath33/cs236/Project-1/PeriodAuto.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/t/theath33/cs236/Project-1/Q_MarkAuto.cpp">
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/Predicate.cpp">
+			<Option target="Project_1"/>
+		</Unit>
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/Predicate.h">
 			<Option target="Project_1"/>
 		</Unit>
 		<Unit filename="/users/guest/t/theath33/cs236/Project-1/Q_MarkAuto.h">
@@ -177,10 +165,13 @@
 		<Unit filename="/users/guest/t/theath33/cs236/Project-1/QueriesAuto.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/t/theath33/cs236/Project-1/RP_Auto.cpp">
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/RP_Auto.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/t/theath33/cs236/Project-1/RP_Auto.h">
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/Rule.cpp">
+			<Option target="Project_1"/>
+		</Unit>
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/Rule.h">
 			<Option target="Project_1"/>
 		</Unit>
 		<Unit filename="/users/guest/t/theath33/cs236/Project-1/RulesAuto.cpp">
@@ -211,6 +202,12 @@
 			<Option target="Project_1"/>
 		</Unit>
 		<Unit filename="/users/guest/t/theath33/cs236/Project-1/UndefinedAuto.h">
+			<Option target="Project_1"/>
+		</Unit>
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/datalogProgram.cpp">
+			<Option target="Project_1"/>
+		</Unit>
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/datalogProgram.h">
 			<Option target="Project_1"/>
 		</Unit>
 		<Unit filename="/users/guest/t/theath33/cs236/Project-1/main.cpp">

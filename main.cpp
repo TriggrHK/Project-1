@@ -28,5 +28,6 @@ int main(int argc, char** argv) {
     // get the tokens from lexer and output in the right format
    // std::cout << "Did it!";
     delete lexer;
+    delete parser;
     return 0;
 }

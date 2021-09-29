@@ -39,6 +39,8 @@ public:
     std::string codeToString();
     std::string getDesc();
     int getLineNum();
+    bool match(TokenType x);
+    TokenType getToken(){return inType;}
 };
 
 #endif // TOKEN_H
