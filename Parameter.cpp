@@ -3,3 +3,6 @@
 //
 
 #include "Parameter.h"
+void Parameter::to_String() {
+    std::cout << param;
+}

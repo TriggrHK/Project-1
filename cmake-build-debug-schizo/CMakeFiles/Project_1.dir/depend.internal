@@ -44,16 +44,31 @@ CMakeFiles/Project_1.dir/Lexer.cpp.o
  /users/guest/t/theath33/cs236/Project-1/StringAuto.h
  /users/guest/t/theath33/cs236/Project-1/Token.h
  /users/guest/t/theath33/cs236/Project-1/UndefinedAuto.h
+CMakeFiles/Project_1.dir/Parameter.cpp.o
+ /users/guest/t/theath33/cs236/Project-1/Parameter.cpp
+ /users/guest/t/theath33/cs236/Project-1/Parameter.h
 CMakeFiles/Project_1.dir/Parser.cpp.o
+ /users/guest/t/theath33/cs236/Project-1/Parameter.h
  /users/guest/t/theath33/cs236/Project-1/Parser.cpp
  /users/guest/t/theath33/cs236/Project-1/Parser.h
+ /users/guest/t/theath33/cs236/Project-1/Predicate.h
+ /users/guest/t/theath33/cs236/Project-1/Rule.h
  /users/guest/t/theath33/cs236/Project-1/Token.h
  /users/guest/t/theath33/cs236/Project-1/datalogProgram.h
+CMakeFiles/Project_1.dir/Predicate.cpp.o
+ /users/guest/t/theath33/cs236/Project-1/Parameter.h
+ /users/guest/t/theath33/cs236/Project-1/Predicate.cpp
+ /users/guest/t/theath33/cs236/Project-1/Predicate.h
 CMakeFiles/Project_1.dir/QueriesAuto.cpp.o
  /users/guest/t/theath33/cs236/Project-1/Automaton.h
  /users/guest/t/theath33/cs236/Project-1/QueriesAuto.cpp
  /users/guest/t/theath33/cs236/Project-1/QueriesAuto.h
  /users/guest/t/theath33/cs236/Project-1/Token.h
+CMakeFiles/Project_1.dir/Rule.cpp.o
+ /users/guest/t/theath33/cs236/Project-1/Parameter.h
+ /users/guest/t/theath33/cs236/Project-1/Predicate.h
+ /users/guest/t/theath33/cs236/Project-1/Rule.cpp
+ /users/guest/t/theath33/cs236/Project-1/Rule.h
 CMakeFiles/Project_1.dir/RulesAuto.cpp.o
  /users/guest/t/theath33/cs236/Project-1/Automaton.h
  /users/guest/t/theath33/cs236/Project-1/RulesAuto.cpp
@@ -78,8 +93,9 @@ CMakeFiles/Project_1.dir/UndefinedAuto.cpp.o
  /users/guest/t/theath33/cs236/Project-1/UndefinedAuto.cpp
  /users/guest/t/theath33/cs236/Project-1/UndefinedAuto.h
 CMakeFiles/Project_1.dir/datalogProgram.cpp.o
- /users/guest/t/theath33/cs236/Project-1/Parser.h
- /users/guest/t/theath33/cs236/Project-1/Token.h
+ /users/guest/t/theath33/cs236/Project-1/Parameter.h
+ /users/guest/t/theath33/cs236/Project-1/Predicate.h
+ /users/guest/t/theath33/cs236/Project-1/Rule.h
  /users/guest/t/theath33/cs236/Project-1/datalogProgram.cpp
  /users/guest/t/theath33/cs236/Project-1/datalogProgram.h
 CMakeFiles/Project_1.dir/main.cpp.o
@@ -95,11 +111,14 @@ CMakeFiles/Project_1.dir/main.cpp.o
  /users/guest/t/theath33/cs236/Project-1/LP_Auto.h
  /users/guest/t/theath33/cs236/Project-1/Lexer.h
  /users/guest/t/theath33/cs236/Project-1/MultAuto.h
+ /users/guest/t/theath33/cs236/Project-1/Parameter.h
  /users/guest/t/theath33/cs236/Project-1/Parser.h
  /users/guest/t/theath33/cs236/Project-1/PeriodAuto.h
+ /users/guest/t/theath33/cs236/Project-1/Predicate.h
  /users/guest/t/theath33/cs236/Project-1/Q_MarkAuto.h
  /users/guest/t/theath33/cs236/Project-1/QueriesAuto.h
  /users/guest/t/theath33/cs236/Project-1/RP_Auto.h
+ /users/guest/t/theath33/cs236/Project-1/Rule.h
  /users/guest/t/theath33/cs236/Project-1/RulesAuto.h
  /users/guest/t/theath33/cs236/Project-1/SchemesAuto.h
  /users/guest/t/theath33/cs236/Project-1/StringAuto.h

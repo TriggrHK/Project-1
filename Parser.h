@@ -13,6 +13,12 @@ class Parser {
 private:
     int tokenIndex = 0;
     std::vector<Token*> tokens;
+    datalogProgram vectorList;
+    std::vector<Predicate> schemes;
+    std::vector<Predicate> facts;
+    std::vector<Rule> rules;
+    std::vector<Predicate> queries;
+
 public:
     Parser(std::vector<Token*> tokenList);
     void parse();
@@ -23,15 +29,15 @@ public:
     void parseRuleList();
     void parseQuery();
     void parseQueryList();
-    void parseIdList();
+    std::vector<Parameter> parseIdList(std::vector<Parameter> inParam);
     void parseFact();
-    void parseStringList();
+    std::vector<Parameter> parseStringList(std::vector<Parameter> inParam);
     void parseRule();
-    void parsePredicate();
-    void parseHeadPredicate();
-    void parseParameter();
-    void parseParameterList();
-    void parsePredicateList();
+    Predicate parsePredicate();
+    Predicate parseHeadPredicate();
+    Parameter parseParameter();
+    std::vector<Parameter> parseParameterList(std::vector<Parameter> inParam);
+    std::vector<Predicate> parsePredicateList(std::vector<Predicate> inPred);
 };
 
 

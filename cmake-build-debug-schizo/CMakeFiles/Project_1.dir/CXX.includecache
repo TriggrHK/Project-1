@@ -6,11 +6,13 @@
 
 #IncludeRegexTransform: 
 
+/users/guest/t/theath33/cs236/Project-1/Parameter.h
+iostream
+-
+
 /users/guest/t/theath33/cs236/Project-1/Parser.cpp
 Parser.h
 /users/guest/t/theath33/cs236/Project-1/Parser.h
-Token.h
-/users/guest/t/theath33/cs236/Project-1/Token.h
 
 /users/guest/t/theath33/cs236/Project-1/Parser.h
 Token.h
@@ -22,13 +24,27 @@ vector
 iostream
 -
 
+/users/guest/t/theath33/cs236/Project-1/Predicate.h
+vector
+-
+iostream
+-
+Parameter.h
+/users/guest/t/theath33/cs236/Project-1/Parameter.h
+
+/users/guest/t/theath33/cs236/Project-1/Rule.h
+vector
+-
+Predicate.h
+/users/guest/t/theath33/cs236/Project-1/Predicate.h
+
 /users/guest/t/theath33/cs236/Project-1/Token.h
 string
 -
 
 /users/guest/t/theath33/cs236/Project-1/datalogProgram.h
-Parser.h
-/users/guest/t/theath33/cs236/Project-1/Parser.h
 vector
 -
+Rule.h
+/users/guest/t/theath33/cs236/Project-1/Rule.h
 

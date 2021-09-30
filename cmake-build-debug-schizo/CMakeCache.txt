@@ -232,6 +232,12 @@ Project_1_BINARY_DIR:STATIC=/users/guest/t/theath33/cs236/Project-1/cmake-build-
 //Value Computed by CMake
 Project_1_SOURCE_DIR:STATIC=/users/guest/t/theath33/cs236/Project-1
 
+//Value Computed by CMake
+Project_BINARY_DIR:STATIC=/users/guest/t/theath33/cs236/Project-1/cmake-build-debug-schizo
+
+//Value Computed by CMake
+Project_SOURCE_DIR:STATIC=/users/guest/t/theath33/cs236/Project-1
+
 
 ########################
 # INTERNAL cache entries

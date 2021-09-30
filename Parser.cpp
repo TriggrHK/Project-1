@@ -3,7 +3,7 @@
 //
 
 #include "Parser.h"
-#include "Token.h"
+
 Parser::Parser(std::vector<Token*> tokensList) {
     tokens = tokensList;
 }
@@ -27,16 +27,17 @@ void Parser::parse(){
         }
     }
     try {
-        auto start = new datalogProgram();
         this->match(TokenType::SCHEMES);
         this->match(TokenType::COLON);
         this->parseScheme();
         this->parseSchemeList();
 
+        //if(tokens[tokenIndex]->match(TokenType::FACTS)){}
         this->match(TokenType::FACTS);
         this->match(TokenType::COLON);
         this->parseFactList();
 
+        //if(tokens[tokenIndex]->match(TokenType::RULES)){}
         this->match(TokenType::RULES);
         this->match(TokenType::COLON);
         this->parseRuleList();
@@ -49,7 +50,7 @@ void Parser::parse(){
         this->match(TokenType::EOF_CP);
     }
     catch(Token* a){
-        std::cout << "Failure!\n  (" << a->codeToString() << "," << a->getDesc() << "," << a->getLineNum() << ")";
+        std::cout << "Failure!\n  (" << a->codeToString() << ",\"" << a->getDesc() << "\"," << a->getLineNum() << ")";
         return;
     }
     std::cout << "Success!\n";
@@ -60,6 +61,30 @@ First: write a parser that only checks syntax -- this is the recursive-descent p
 Second: write classes for data structures. (Rule, Predicate, Parameter, etc.)
 Third: add code to the parser to create data structures. This can be done easily without modifying the lines of code that were created in the first step. For example when a parameter is being parsed a Parameter object is created and returned, then saved in the appropriate place.*/
    // while(tokenIndex < tokens.size()){std::cout << tokens[tokenIndex]->codeToString() << "\n";tokenIndex++;}
+   std::cout << "Schemes(" << schemes.size() << "):\n";
+   for(int i = 0; i < schemes.size(); i++){
+       std::cout << "  ";
+       schemes[i].to_String();
+       std::cout << "\n";
+   }
+    std::cout << "Facts(" << facts.size() << "):\n";
+    for(int i = 0; i < facts.size(); i++){
+        std::cout << "  ";
+        facts[i].to_String();
+        std::cout << "\n";
+    }
+    std::cout << "Rules(" << rules.size() << "):\n";
+    for(int i = 0; i < rules.size(); i++){
+        std::cout << "  ";
+        rules[i].to_String();
+        std::cout << "\n";
+    }
+    std::cout << "Queries(" << queries.size() << "):\n";
+    for(int i = 0; i < queries.size(); i++){
+        std::cout << "  ";
+        queries[i].to_String();
+        std::cout << "?\n";
+    }
 }
 void Parser::match(TokenType a) {
     if(tokens[tokenIndex]->getToken() == a){
@@ -70,10 +95,16 @@ void Parser::match(TokenType a) {
     }
 }
 void Parser::parseScheme() {
+    std::string tempID;
+    std::vector<Parameter> tempParam;
     this->match(TokenType::ID);
+    tempID = tokens[tokenIndex-1]->getDesc();
     this->match(TokenType::LEFT_PAREN);
     this->match(TokenType::ID);
-    this->parseIdList();
+    tempParam.push_back(tokens[tokenIndex-1]->getDesc());
+    tempParam = this->parseIdList(tempParam);
+    Predicate a(tempID, tempParam);
+    schemes.push_back(a);
     this->match(TokenType::RIGHT_PAREN);
 }
 void Parser::parseSchemeList() {
@@ -89,10 +120,16 @@ void Parser::parseFactList() {
     }
 }
 void Parser::parseFact() {
+    std::string tempID;
+    std::vector<Parameter> tempParam;
     this->match(TokenType::ID);
+    tempID = tokens[tokenIndex-1]->getDesc();
     this->match(TokenType::LEFT_PAREN);
     this->match(TokenType::STRING);
-    this->parseStringList();
+    tempParam.push_back(tokens[tokenIndex-1]->getDesc());
+    tempParam = this->parseStringList(tempParam);
+    Predicate a(tempID, tempParam);
+    facts.push_back(a);
     this->match(TokenType::RIGHT_PAREN);
     this->match(TokenType::PERIOD);
 }
@@ -103,67 +140,94 @@ void Parser::parseRuleList() {
     }
 }
 void Parser::parseRule(){
-    this->parseHeadPredicate();
+    std::vector<Predicate> tempPred;
+    Predicate headPred = this->parseHeadPredicate();
     this->match(TokenType::COLON_DASH);
-    this->parsePredicate();
-    this->parsePredicateList();
+    tempPred.push_back(this->parsePredicate());
+    tempPred = this->parsePredicateList(tempPred);
     this->match(TokenType::PERIOD);
+    Rule a(headPred,tempPred);
+    rules.push_back(a);
 }
-void Parser::parseStringList() {
+std::vector<Parameter> Parser::parseStringList(std::vector<Parameter> inParam) {
+    std::vector<Parameter> tempParam = inParam;
     this->match(TokenType::COMMA);
     this->match(TokenType::STRING);
+    tempParam.push_back(tokens[tokenIndex-1]->getDesc());
     if(tokens[tokenIndex]->getToken() != TokenType::RIGHT_PAREN) {
-        this->parseStringList();
+        tempParam = this->parseStringList(tempParam);
     }
+    return tempParam;
 }
-void Parser::parseIdList() {
+std::vector<Parameter> Parser::parseIdList(std::vector<Parameter> inParam) {
+    std::vector<Parameter> tempParam = inParam;
     this->match(TokenType::COMMA);
     this->match(TokenType::ID);
+    tempParam.push_back(tokens[tokenIndex-1]->getDesc());
     if(tokens[tokenIndex]->getToken() != TokenType::RIGHT_PAREN) {
-        this->parseIdList();
+        tempParam = this->parseIdList(tempParam);
     }
+    return tempParam;
 }
-void Parser::parseHeadPredicate() {
+Predicate Parser::parseHeadPredicate() {
     //just have it run a scheme lol
+    std::vector<Parameter> tempParam;
+    std::string tempID;
     this->match(TokenType::ID);
+    tempID = tokens[tokenIndex-1]->getDesc();
     this->match(TokenType::LEFT_PAREN);
     this->match(TokenType::ID);
-    this->parseIdList();
+    tempParam.push_back(tokens[tokenIndex-1]->getDesc());
+    tempParam = this->parseIdList(tempParam);
+    Predicate a(tempID, tempParam);
     this->match(TokenType::RIGHT_PAREN);
+    return a;
 }
-void Parser::parsePredicate() {
+Predicate Parser::parsePredicate() {
+    std::string tempID;
+    std::vector<Parameter> tempParam;
     this->match(TokenType::ID);
+    tempID = tokens[tokenIndex-1]->getDesc();
     this->match(TokenType::LEFT_PAREN);
-    this->parseParameter();
-    this->parseParameterList();
+    tempParam.push_back(this->parseParameter());
+    tempParam = this->parseParameterList(tempParam);
     this->match(TokenType::RIGHT_PAREN);
+    Predicate tempPred(tempID,tempParam);
+    return tempPred;
 }
-void Parser::parsePredicateList() {
+std::vector<Predicate> Parser::parsePredicateList(std::vector<Predicate> inPred) {
+    std::vector<Predicate> tempPred = inPred;
     if(tokens[tokenIndex]->getToken() != TokenType::PERIOD) {
         this->match(TokenType::COMMA);
-        this->parsePredicate();
+        tempPred.push_back(this->parsePredicate());
     }
     if(tokens[tokenIndex]->getToken() != TokenType::PERIOD) {
-        this->parsePredicateList();
+        tempPred = this->parsePredicateList(tempPred);
     }
+    return tempPred;
 }
-void Parser::parseParameter() {
+Parameter Parser::parseParameter() {
     if(tokens[tokenIndex]->getToken() == TokenType::STRING) {
         this->match(TokenType::STRING);
+        return tokens[tokenIndex-1]->getDesc();
     }
     else{
         this->match(TokenType::ID);
+        return tokens[tokenIndex-1]->getDesc();
     }
 }
-void Parser::parseParameterList() {
+std::vector<Parameter> Parser::parseParameterList(std::vector<Parameter> inParam) {
+    std::vector<Parameter> tempParam = inParam;
     this->match(TokenType::COMMA);
-    this->parseParameter();
+    tempParam.push_back(this->parseParameter());
     if(tokens[tokenIndex]->getToken() != TokenType::RIGHT_PAREN) {
-        this->parseParameterList();
+        this->parseParameterList(tempParam);
     }
+    return tempParam;
 }
 void Parser::parseQuery() {
-    this->parsePredicate();
+    std::vector<Predicate> tempPred;
+    queries.push_back(this->parsePredicate());
     this->match(TokenType::Q_MARK);
 }
 void Parser::parseQueryList() {

@@ -4,10 +4,14 @@
 
 #ifndef PROJECT_1_PARAMETER_H
 #define PROJECT_1_PARAMETER_H
-
+#include <iostream>
 
 class Parameter {
-
+private:
+    std::string param;
+public:
+    Parameter(std::string inString){param = inString;}
+    void to_String();
 };
 
 

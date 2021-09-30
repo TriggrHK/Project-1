@@ -4,20 +4,21 @@
 
 #ifndef PROJECT_1_DATALOGPROGRAM_H
 #define PROJECT_1_DATALOGPROGRAM_H
-#include "Parser.h"
 #include <vector>
-#include "Parameter.h"
-#include "Predicate.h"
 #include "Rule.h"
 
 
 class datalogProgram {
 private:
-    //std::vector<Parameter>;
-   // std::vector<Rule>;
-   // std::vector<Predicate>;
+    std::vector<Parameter> params;
+    std::vector<Rule> rules;
+    std::vector<Predicate> predics;
 public:
     datalogProgram();
+    void add_Vector(Parameter inParm);
+    void add_Vector(Rule inRule);
+    void add_Vector(Predicate inPred);
+    void to_String();
 };
 
 

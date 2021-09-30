@@ -44,15 +44,30 @@ CMakeFiles/Project_1.dir/Lexer.cpp.o: ../StringAuto.h
 CMakeFiles/Project_1.dir/Lexer.cpp.o: ../Token.h
 CMakeFiles/Project_1.dir/Lexer.cpp.o: ../UndefinedAuto.h
 
+CMakeFiles/Project_1.dir/Parameter.cpp.o: ../Parameter.cpp
+CMakeFiles/Project_1.dir/Parameter.cpp.o: ../Parameter.h
+
+CMakeFiles/Project_1.dir/Parser.cpp.o: ../Parameter.h
 CMakeFiles/Project_1.dir/Parser.cpp.o: ../Parser.cpp
 CMakeFiles/Project_1.dir/Parser.cpp.o: ../Parser.h
+CMakeFiles/Project_1.dir/Parser.cpp.o: ../Predicate.h
+CMakeFiles/Project_1.dir/Parser.cpp.o: ../Rule.h
 CMakeFiles/Project_1.dir/Parser.cpp.o: ../Token.h
 CMakeFiles/Project_1.dir/Parser.cpp.o: ../datalogProgram.h
+
+CMakeFiles/Project_1.dir/Predicate.cpp.o: ../Parameter.h
+CMakeFiles/Project_1.dir/Predicate.cpp.o: ../Predicate.cpp
+CMakeFiles/Project_1.dir/Predicate.cpp.o: ../Predicate.h
 
 CMakeFiles/Project_1.dir/QueriesAuto.cpp.o: ../Automaton.h
 CMakeFiles/Project_1.dir/QueriesAuto.cpp.o: ../QueriesAuto.cpp
 CMakeFiles/Project_1.dir/QueriesAuto.cpp.o: ../QueriesAuto.h
 CMakeFiles/Project_1.dir/QueriesAuto.cpp.o: ../Token.h
+
+CMakeFiles/Project_1.dir/Rule.cpp.o: ../Parameter.h
+CMakeFiles/Project_1.dir/Rule.cpp.o: ../Predicate.h
+CMakeFiles/Project_1.dir/Rule.cpp.o: ../Rule.cpp
+CMakeFiles/Project_1.dir/Rule.cpp.o: ../Rule.h
 
 CMakeFiles/Project_1.dir/RulesAuto.cpp.o: ../Automaton.h
 CMakeFiles/Project_1.dir/RulesAuto.cpp.o: ../RulesAuto.cpp
@@ -77,8 +92,9 @@ CMakeFiles/Project_1.dir/UndefinedAuto.cpp.o: ../Token.h
 CMakeFiles/Project_1.dir/UndefinedAuto.cpp.o: ../UndefinedAuto.cpp
 CMakeFiles/Project_1.dir/UndefinedAuto.cpp.o: ../UndefinedAuto.h
 
-CMakeFiles/Project_1.dir/datalogProgram.cpp.o: ../Parser.h
-CMakeFiles/Project_1.dir/datalogProgram.cpp.o: ../Token.h
+CMakeFiles/Project_1.dir/datalogProgram.cpp.o: ../Parameter.h
+CMakeFiles/Project_1.dir/datalogProgram.cpp.o: ../Predicate.h
+CMakeFiles/Project_1.dir/datalogProgram.cpp.o: ../Rule.h
 CMakeFiles/Project_1.dir/datalogProgram.cpp.o: ../datalogProgram.cpp
 CMakeFiles/Project_1.dir/datalogProgram.cpp.o: ../datalogProgram.h
 
@@ -94,11 +110,14 @@ CMakeFiles/Project_1.dir/main.cpp.o: ../IdAuto.h
 CMakeFiles/Project_1.dir/main.cpp.o: ../LP_Auto.h
 CMakeFiles/Project_1.dir/main.cpp.o: ../Lexer.h
 CMakeFiles/Project_1.dir/main.cpp.o: ../MultAuto.h
+CMakeFiles/Project_1.dir/main.cpp.o: ../Parameter.h
 CMakeFiles/Project_1.dir/main.cpp.o: ../Parser.h
 CMakeFiles/Project_1.dir/main.cpp.o: ../PeriodAuto.h
+CMakeFiles/Project_1.dir/main.cpp.o: ../Predicate.h
 CMakeFiles/Project_1.dir/main.cpp.o: ../Q_MarkAuto.h
 CMakeFiles/Project_1.dir/main.cpp.o: ../QueriesAuto.h
 CMakeFiles/Project_1.dir/main.cpp.o: ../RP_Auto.h
+CMakeFiles/Project_1.dir/main.cpp.o: ../Rule.h
 CMakeFiles/Project_1.dir/main.cpp.o: ../RulesAuto.h
 CMakeFiles/Project_1.dir/main.cpp.o: ../SchemesAuto.h
 CMakeFiles/Project_1.dir/main.cpp.o: ../StringAuto.h
