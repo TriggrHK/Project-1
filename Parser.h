@@ -8,6 +8,7 @@
 #include "datalogProgram.h"
 #include <vector>
 #include <iostream>
+#include <set>
 
 class Parser {
 private:
@@ -18,6 +19,7 @@ private:
     std::vector<Predicate> facts;
     std::vector<Rule> rules;
     std::vector<Predicate> queries;
+    std::set<std::string> domain;
 
 public:
     Parser(std::vector<Token*> tokenList);

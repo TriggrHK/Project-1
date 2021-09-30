@@ -30,18 +30,19 @@ void Parser::parse(){
         this->match(TokenType::SCHEMES);
         this->match(TokenType::COLON);
         this->parseScheme();
-        this->parseSchemeList();
-
-        //if(tokens[tokenIndex]->match(TokenType::FACTS)){}
-        this->match(TokenType::FACTS);
-        this->match(TokenType::COLON);
-        this->parseFactList();
-
-        //if(tokens[tokenIndex]->match(TokenType::RULES)){}
-        this->match(TokenType::RULES);
-        this->match(TokenType::COLON);
-        this->parseRuleList();
-
+        if(tokens[tokenIndex]->getToken() != TokenType::FACTS) {
+            this->parseSchemeList();
+        }
+        if(tokens[tokenIndex]->getToken() == TokenType::FACTS) {
+            this->match(TokenType::FACTS);
+            this->match(TokenType::COLON);
+            this->parseFactList();
+        }
+        if(tokens[tokenIndex]->getToken() == TokenType::RULES) {
+            this->match(TokenType::RULES);
+            this->match(TokenType::COLON);
+            this->parseRuleList();
+        }
         this->match(TokenType::QUERIES);
         this->match(TokenType::COLON);
         this->parseQuery();
@@ -85,7 +86,13 @@ Third: add code to the parser to create data structures. This can be done easily
         queries[i].to_String();
         std::cout << "?\n";
     }
+    std::cout << "Domain(" << domain.size() << "):\n";
+    for(auto i = domain.begin(); i != domain.end(); i++){
+        std::cout << "  " << *i;
+        std::cout << "\n";
+    }
 }
+
 void Parser::match(TokenType a) {
     if(tokens[tokenIndex]->getToken() == a){
         tokenIndex++;
@@ -102,20 +109,22 @@ void Parser::parseScheme() {
     this->match(TokenType::LEFT_PAREN);
     this->match(TokenType::ID);
     tempParam.push_back(tokens[tokenIndex-1]->getDesc());
-    tempParam = this->parseIdList(tempParam);
+    if(tokens[tokenIndex]->getToken() != TokenType::RIGHT_PAREN) {
+        tempParam = this->parseIdList(tempParam);
+    }
     Predicate a(tempID, tempParam);
     schemes.push_back(a);
     this->match(TokenType::RIGHT_PAREN);
 }
 void Parser::parseSchemeList() {
-    this->parseScheme();
     if(tokens[tokenIndex]->getToken() != TokenType::FACTS) {
+        this->parseScheme();
         this->parseSchemeList();
     }
 }
 void Parser::parseFactList() {
-    this->parseFact();
     if(tokens[tokenIndex]->getToken() != TokenType::RULES) {
+        this->parseFact();
         this->parseFactList();
     }
 }
@@ -127,15 +136,18 @@ void Parser::parseFact() {
     this->match(TokenType::LEFT_PAREN);
     this->match(TokenType::STRING);
     tempParam.push_back(tokens[tokenIndex-1]->getDesc());
-    tempParam = this->parseStringList(tempParam);
+    domain.insert(tokens[tokenIndex-1]->getDesc());
+    if(tokens[tokenIndex]->getToken() != TokenType::RIGHT_PAREN) {
+        tempParam = this->parseStringList(tempParam);
+    }
     Predicate a(tempID, tempParam);
     facts.push_back(a);
     this->match(TokenType::RIGHT_PAREN);
     this->match(TokenType::PERIOD);
 }
 void Parser::parseRuleList() {
-    this->parseRule();
     if(tokens[tokenIndex]->getToken() != TokenType::QUERIES) {
+        this->parseRule();
         this->parseRuleList();
     }
 }
@@ -154,6 +166,7 @@ std::vector<Parameter> Parser::parseStringList(std::vector<Parameter> inParam) {
     this->match(TokenType::COMMA);
     this->match(TokenType::STRING);
     tempParam.push_back(tokens[tokenIndex-1]->getDesc());
+    domain.insert(tokens[tokenIndex-1]->getDesc());
     if(tokens[tokenIndex]->getToken() != TokenType::RIGHT_PAREN) {
         tempParam = this->parseStringList(tempParam);
     }
@@ -178,7 +191,9 @@ Predicate Parser::parseHeadPredicate() {
     this->match(TokenType::LEFT_PAREN);
     this->match(TokenType::ID);
     tempParam.push_back(tokens[tokenIndex-1]->getDesc());
-    tempParam = this->parseIdList(tempParam);
+    if(tokens[tokenIndex]->getToken() != TokenType::RIGHT_PAREN) {
+        tempParam = this->parseIdList(tempParam);
+    }
     Predicate a(tempID, tempParam);
     this->match(TokenType::RIGHT_PAREN);
     return a;
@@ -190,7 +205,9 @@ Predicate Parser::parsePredicate() {
     tempID = tokens[tokenIndex-1]->getDesc();
     this->match(TokenType::LEFT_PAREN);
     tempParam.push_back(this->parseParameter());
-    tempParam = this->parseParameterList(tempParam);
+    if(tokens[tokenIndex]->getToken() != TokenType::RIGHT_PAREN) {
+        tempParam = this->parseParameterList(tempParam);
+    }
     this->match(TokenType::RIGHT_PAREN);
     Predicate tempPred(tempID,tempParam);
     return tempPred;
@@ -231,8 +248,8 @@ void Parser::parseQuery() {
     this->match(TokenType::Q_MARK);
 }
 void Parser::parseQueryList() {
-    this->parseQuery();
     if (tokens[tokenIndex]->getToken() != TokenType::EOF_CP) {
+        this->parseQuery();
         this->parseQueryList();
     }
 }
