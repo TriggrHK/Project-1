@@ -12,6 +12,9 @@ void Rule::to_String() {
     std::cout << " :- ";
     for(unsigned int i = 0; i < bodyPredicates.size(); i++){
         bodyPredicates[i].to_String();
+        if(i != bodyPredicates.size()-1){
+            std::cout << ",";
+        }
     }
     std::cout << ".";
 }
