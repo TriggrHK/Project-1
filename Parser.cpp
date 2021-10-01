@@ -20,7 +20,7 @@ void Parser::parse(){
  * if is able to read through it all without throwing an exception then print success
  * have datalog program that saves all the info into vectors then after success or failure toString the vectors
  * */
-    for(int i = 0; i < tokens.size(); i++){
+    for(unsigned int i = 0; i < tokens.size(); i++){
         if(tokens[i]->match(TokenType::COMMENT)){
            tokens.erase(tokens.begin() + i);
            i--;
@@ -63,25 +63,25 @@ Second: write classes for data structures. (Rule, Predicate, Parameter, etc.)
 Third: add code to the parser to create data structures. This can be done easily without modifying the lines of code that were created in the first step. For example when a parameter is being parsed a Parameter object is created and returned, then saved in the appropriate place.*/
    // while(tokenIndex < tokens.size()){std::cout << tokens[tokenIndex]->codeToString() << "\n";tokenIndex++;}
    std::cout << "Schemes(" << schemes.size() << "):\n";
-   for(int i = 0; i < schemes.size(); i++){
+   for(unsigned int i = 0; i < schemes.size(); i++){
        std::cout << "  ";
        schemes[i].to_String();
        std::cout << "\n";
    }
     std::cout << "Facts(" << facts.size() << "):\n";
-    for(int i = 0; i < facts.size(); i++){
+    for(unsigned int i = 0; i < facts.size(); i++){
         std::cout << "  ";
         facts[i].to_String();
         std::cout << "\n";
     }
     std::cout << "Rules(" << rules.size() << "):\n";
-    for(int i = 0; i < rules.size(); i++){
+    for(unsigned int i = 0; i < rules.size(); i++){
         std::cout << "  ";
         rules[i].to_String();
         std::cout << "\n";
     }
     std::cout << "Queries(" << queries.size() << "):\n";
-    for(int i = 0; i < queries.size(); i++){
+    for(unsigned int i = 0; i < queries.size(); i++){
         std::cout << "  ";
         queries[i].to_String();
         std::cout << "?\n";

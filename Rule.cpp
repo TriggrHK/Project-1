@@ -10,7 +10,7 @@ Rule::Rule(Predicate inPred, std::vector<Predicate> inPredVector) {
 void Rule::to_String() {
     headPredicate.to_String();
     std::cout << " :- ";
-    for(int i = 0; i < bodyPredicates.size(); i++){
+    for(unsigned int i = 0; i < bodyPredicates.size(); i++){
         bodyPredicates[i].to_String();
     }
     std::cout << ".";

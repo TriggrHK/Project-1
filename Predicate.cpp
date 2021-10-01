@@ -9,9 +9,9 @@ Predicate::Predicate(std::string inID, std::vector<Parameter> inVec) {
 }
 void Predicate::to_String() {
  std::cout << predID << "(";
- for(int i = 0; i < predParameter.size(); i++){
+ for(unsigned int i = 0; i < predParameter.size(); i++){
      predParameter[i].to_String();
-     if(i+1 < predParameter.size()){
+     if(i + 1 < predParameter.size()){
          std::cout << ",";
      }
  }
