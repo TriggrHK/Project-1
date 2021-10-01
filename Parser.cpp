@@ -72,7 +72,7 @@ Third: add code to the parser to create data structures. This can be done easily
     for(unsigned int i = 0; i < facts.size(); i++){
         std::cout << "  ";
         facts[i].to_String();
-        std::cout << "\n";
+        std::cout << ".\n";
     }
     std::cout << "Rules(" << rules.size() << "):\n";
     for(unsigned int i = 0; i < rules.size(); i++){
@@ -238,7 +238,7 @@ std::vector<Parameter> Parser::parseParameterList(std::vector<Parameter> inParam
     this->match(TokenType::COMMA);
     tempParam.push_back(this->parseParameter());
     if(tokens[tokenIndex]->getToken() != TokenType::RIGHT_PAREN) {
-        this->parseParameterList(tempParam);
+        tempParam = this->parseParameterList(tempParam);
     }
     return tempParam;
 }

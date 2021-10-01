@@ -7,7 +7,7 @@
 datalogProgram::datalogProgram() {
 }
 
-void datalogProgram::add_Vector(Parameter inParm) {
+/*void datalogProgram::add_Vector(Parameter inParm) {
 params.push_back(inParm);
 }
 void datalogProgram::add_Vector(Rule inRule) {
@@ -21,4 +21,4 @@ void datalogProgram::to_String() {
     for(int i = 0; i < predics.size(); i++){
         predics[i].to_String();
     }
-}
+}*/

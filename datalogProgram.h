@@ -15,10 +15,10 @@ private:
     std::vector<Predicate> predics;
 public:
     datalogProgram();
-    void add_Vector(Parameter inParm);
-    void add_Vector(Rule inRule);
-    void add_Vector(Predicate inPred);
-    void to_String();
+  //  void add_Vector(Parameter inParm);
+   // void add_Vector(Rule inRule);
+   // void add_Vector(Predicate inPred);
+  //  void to_String();
 };
 
 
