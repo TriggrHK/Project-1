@@ -12,6 +12,7 @@ private:
 public:
     Parameter(std::string inString){param = inString;}
     void to_String();
+    std::string getParam();
 };
 
 

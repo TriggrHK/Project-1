@@ -16,6 +16,8 @@ public:
     Predicate(std::string inID, std::vector<Parameter> inVec);
     Predicate(){}
     void to_String();
+    std::string getID();
+    std::vector<std::string> getStringVect();
 };
 
 #endif //PROJECT_1_PREDICATE_H

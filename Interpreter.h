@@ -12,11 +12,14 @@ class Interpreter {
 private:
     datalogProgram parsedData;
     Database relations;
+    std::vector<Predicate> schemes;
+    std::vector<Predicate> facts;
+    std::vector<Predicate> queries;
 public:
-    Interpreter();
+    Interpreter(){}
     Interpreter(datalogProgram newParse, Database newRelations);
     void Run();
-    //Relation* evaluatePredicate(const Predicate& p);
+    Relation evaluatePredicate(const Predicate& p);
 };
 
 

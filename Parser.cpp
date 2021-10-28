@@ -44,15 +44,9 @@ void Parser::parse(datalogProgram &fileStorage){
         std::cout << "Failure!\n  (" << a->codeToString() << ",\"" << a->getDesc() << "\"," << a->getLineNum() << ")";
         return;
     }
-    std::cout << "Success!\n";
-    //to string the datalogProgram
-    //change the recursion part to this part
-    /*A good approach is to complete the project in three steps:
-First: write a parser that only checks syntax -- this is the recursive-descent part. (Does not build any data structures.)
-Second: write classes for data structures. (Rule, Predicate, Parameter, etc.)
-Third: add code to the parser to create data structures. This can be done easily without modifying the lines of code that were created in the first step. For example when a parameter is being parsed a Parameter object is created and returned, then saved in the appropriate place.*/
-   // while(tokenIndex < tokens.size()){std::cout << tokens[tokenIndex]->codeToString() << "\n";tokenIndex++;}
-   std::cout << "Schemes(" << schemes.size() << "):\n";
+   /* std::cout << "Success!\n";
+
+    std::cout << "Schemes(" << schemes.size() << "):\n";
    for(unsigned int i = 0; i < schemes.size(); i++){
        std::cout << "  ";
        schemes[i].to_String();
@@ -80,7 +74,7 @@ Third: add code to the parser to create data structures. This can be done easily
     for(auto i = domain.begin(); i != domain.end(); i++){
         std::cout << "  " << *i;
         std::cout << "\n";
-    }
+    }*/
     fileStorage.copy_scheme(schemes);
     fileStorage.copy_fact(facts);
     fileStorage.copy_rule(rules);

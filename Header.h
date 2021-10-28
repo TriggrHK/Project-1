@@ -10,6 +10,11 @@
 class Header {
 private :
     std::vector<std::string> attributes;
+public:
+    Header(){}
+    Header(std::vector<std::string> newHeader){
+        attributes = newHeader;
+    }
 };
 
 

@@ -17,3 +17,14 @@ void Predicate::to_String() {
  }
  std::cout << ")";
 }
+
+std::string Predicate::getID(){
+    return predID;
+}
+std::vector<std::string> Predicate::getStringVect(){
+    std::vector<std::string> newString;
+    for(unsigned int i = 0; i < predParameter.size(); i++){
+        newString.push_back(predParameter[i].getParam());
+    }
+    return newString;
+}

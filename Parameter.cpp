@@ -6,3 +6,6 @@
 void Parameter::to_String() {
     std::cout << param;
 }
+std::string Parameter::getParam() {
+    return param;
+}

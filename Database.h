@@ -10,7 +10,10 @@
 class Database {
 private:
     std::map<std::string, Relation> database;
+public:
+    void addRelation(std::string name, Relation newRelation);
+    void addTuple(std::string name, std::vector<std::string> tuples);
+    //addRow?
 };
-
 
 #endif //PROJECT_1_DATABASE_H
