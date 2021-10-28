@@ -4,22 +4,12 @@
 
 #include "Parser.h"
 
+
 Parser::Parser(std::vector<Token*> tokensList) {
     tokens = tokensList;
 }
-void Parser::parse(){
-/**
- * First of all write parse that goes through all the tokens
- *
- * Starts with at least 1 scheme
- * can have facts
- * can have rules
- * ends with at least one query
- * lists out domain which is the strings in Facts
- *
- * if is able to read through it all without throwing an exception then print success
- * have datalog program that saves all the info into vectors then after success or failure toString the vectors
- * */
+void Parser::parse(datalogProgram &fileStorage){
+
     for(unsigned int i = 0; i < tokens.size(); i++){
         if(tokens[i]->match(TokenType::COMMENT)){
            tokens.erase(tokens.begin() + i);
@@ -91,6 +81,10 @@ Third: add code to the parser to create data structures. This can be done easily
         std::cout << "  " << *i;
         std::cout << "\n";
     }
+    fileStorage.copy_scheme(schemes);
+    fileStorage.copy_fact(facts);
+    fileStorage.copy_rule(rules);
+    fileStorage.copy_query(queries);
 }
 
 void Parser::match(TokenType a) {
@@ -101,6 +95,7 @@ void Parser::match(TokenType a) {
         throw tokens[tokenIndex];
     }
 }
+
 void Parser::parseScheme() {
     std::string tempID;
     std::vector<Parameter> tempParam;

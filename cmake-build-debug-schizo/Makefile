@@ -177,6 +177,33 @@ CommentAuto.cpp.s:
 	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/CommentAuto.cpp.s
 .PHONY : CommentAuto.cpp.s
 
+Database.o: Database.cpp.o
+
+.PHONY : Database.o
+
+# target to build an object file
+Database.cpp.o:
+	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/Database.cpp.o
+.PHONY : Database.cpp.o
+
+Database.i: Database.cpp.i
+
+.PHONY : Database.i
+
+# target to preprocess a source file
+Database.cpp.i:
+	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/Database.cpp.i
+.PHONY : Database.cpp.i
+
+Database.s: Database.cpp.s
+
+.PHONY : Database.s
+
+# target to generate assembly for a file
+Database.cpp.s:
+	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/Database.cpp.s
+.PHONY : Database.cpp.s
+
 FactsAuto.o: FactsAuto.cpp.o
 
 .PHONY : FactsAuto.o
@@ -204,6 +231,33 @@ FactsAuto.cpp.s:
 	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/FactsAuto.cpp.s
 .PHONY : FactsAuto.cpp.s
 
+Header.o: Header.cpp.o
+
+.PHONY : Header.o
+
+# target to build an object file
+Header.cpp.o:
+	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/Header.cpp.o
+.PHONY : Header.cpp.o
+
+Header.i: Header.cpp.i
+
+.PHONY : Header.i
+
+# target to preprocess a source file
+Header.cpp.i:
+	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/Header.cpp.i
+.PHONY : Header.cpp.i
+
+Header.s: Header.cpp.s
+
+.PHONY : Header.s
+
+# target to generate assembly for a file
+Header.cpp.s:
+	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/Header.cpp.s
+.PHONY : Header.cpp.s
+
 IdAuto.o: IdAuto.cpp.o
 
 .PHONY : IdAuto.o
@@ -230,6 +284,33 @@ IdAuto.s: IdAuto.cpp.s
 IdAuto.cpp.s:
 	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/IdAuto.cpp.s
 .PHONY : IdAuto.cpp.s
+
+Interpreter.o: Interpreter.cpp.o
+
+.PHONY : Interpreter.o
+
+# target to build an object file
+Interpreter.cpp.o:
+	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/Interpreter.cpp.o
+.PHONY : Interpreter.cpp.o
+
+Interpreter.i: Interpreter.cpp.i
+
+.PHONY : Interpreter.i
+
+# target to preprocess a source file
+Interpreter.cpp.i:
+	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/Interpreter.cpp.i
+.PHONY : Interpreter.cpp.i
+
+Interpreter.s: Interpreter.cpp.s
+
+.PHONY : Interpreter.s
+
+# target to generate assembly for a file
+Interpreter.cpp.s:
+	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/Interpreter.cpp.s
+.PHONY : Interpreter.cpp.s
 
 Lexer.o: Lexer.cpp.o
 
@@ -366,6 +447,33 @@ QueriesAuto.cpp.s:
 	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/QueriesAuto.cpp.s
 .PHONY : QueriesAuto.cpp.s
 
+Relation.o: Relation.cpp.o
+
+.PHONY : Relation.o
+
+# target to build an object file
+Relation.cpp.o:
+	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/Relation.cpp.o
+.PHONY : Relation.cpp.o
+
+Relation.i: Relation.cpp.i
+
+.PHONY : Relation.i
+
+# target to preprocess a source file
+Relation.cpp.i:
+	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/Relation.cpp.i
+.PHONY : Relation.cpp.i
+
+Relation.s: Relation.cpp.s
+
+.PHONY : Relation.s
+
+# target to generate assembly for a file
+Relation.cpp.s:
+	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/Relation.cpp.s
+.PHONY : Relation.cpp.s
+
 Rule.o: Rule.cpp.o
 
 .PHONY : Rule.o
@@ -501,6 +609,33 @@ Token.cpp.s:
 	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/Token.cpp.s
 .PHONY : Token.cpp.s
 
+Tuple.o: Tuple.cpp.o
+
+.PHONY : Tuple.o
+
+# target to build an object file
+Tuple.cpp.o:
+	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/Tuple.cpp.o
+.PHONY : Tuple.cpp.o
+
+Tuple.i: Tuple.cpp.i
+
+.PHONY : Tuple.i
+
+# target to preprocess a source file
+Tuple.cpp.i:
+	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/Tuple.cpp.i
+.PHONY : Tuple.cpp.i
+
+Tuple.s: Tuple.cpp.s
+
+.PHONY : Tuple.s
+
+# target to generate assembly for a file
+Tuple.cpp.s:
+	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/Tuple.cpp.s
+.PHONY : Tuple.cpp.s
+
 UndefinedAuto.o: UndefinedAuto.cpp.o
 
 .PHONY : UndefinedAuto.o
@@ -597,12 +732,21 @@ help:
 	@echo "... CommentAuto.o"
 	@echo "... CommentAuto.i"
 	@echo "... CommentAuto.s"
+	@echo "... Database.o"
+	@echo "... Database.i"
+	@echo "... Database.s"
 	@echo "... FactsAuto.o"
 	@echo "... FactsAuto.i"
 	@echo "... FactsAuto.s"
+	@echo "... Header.o"
+	@echo "... Header.i"
+	@echo "... Header.s"
 	@echo "... IdAuto.o"
 	@echo "... IdAuto.i"
 	@echo "... IdAuto.s"
+	@echo "... Interpreter.o"
+	@echo "... Interpreter.i"
+	@echo "... Interpreter.s"
 	@echo "... Lexer.o"
 	@echo "... Lexer.i"
 	@echo "... Lexer.s"
@@ -618,6 +762,9 @@ help:
 	@echo "... QueriesAuto.o"
 	@echo "... QueriesAuto.i"
 	@echo "... QueriesAuto.s"
+	@echo "... Relation.o"
+	@echo "... Relation.i"
+	@echo "... Relation.s"
 	@echo "... Rule.o"
 	@echo "... Rule.i"
 	@echo "... Rule.s"
@@ -633,6 +780,9 @@ help:
 	@echo "... Token.o"
 	@echo "... Token.i"
 	@echo "... Token.s"
+	@echo "... Tuple.o"
+	@echo "... Tuple.i"
+	@echo "... Tuple.s"
 	@echo "... UndefinedAuto.o"
 	@echo "... UndefinedAuto.i"
 	@echo "... UndefinedAuto.s"

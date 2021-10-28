@@ -11,15 +11,35 @@ CMakeFiles/Project_1.dir/CommentAuto.cpp.o: ../CommentAuto.cpp
 CMakeFiles/Project_1.dir/CommentAuto.cpp.o: ../CommentAuto.h
 CMakeFiles/Project_1.dir/CommentAuto.cpp.o: ../Token.h
 
+CMakeFiles/Project_1.dir/Database.cpp.o: ../Database.cpp
+CMakeFiles/Project_1.dir/Database.cpp.o: ../Database.h
+CMakeFiles/Project_1.dir/Database.cpp.o: ../Header.h
+CMakeFiles/Project_1.dir/Database.cpp.o: ../Relation.h
+CMakeFiles/Project_1.dir/Database.cpp.o: ../Tuple.h
+
 CMakeFiles/Project_1.dir/FactsAuto.cpp.o: ../Automaton.h
 CMakeFiles/Project_1.dir/FactsAuto.cpp.o: ../FactsAuto.cpp
 CMakeFiles/Project_1.dir/FactsAuto.cpp.o: ../FactsAuto.h
 CMakeFiles/Project_1.dir/FactsAuto.cpp.o: ../Token.h
 
+CMakeFiles/Project_1.dir/Header.cpp.o: ../Header.cpp
+CMakeFiles/Project_1.dir/Header.cpp.o: ../Header.h
+
 CMakeFiles/Project_1.dir/IdAuto.cpp.o: ../Automaton.h
 CMakeFiles/Project_1.dir/IdAuto.cpp.o: ../IdAuto.cpp
 CMakeFiles/Project_1.dir/IdAuto.cpp.o: ../IdAuto.h
 CMakeFiles/Project_1.dir/IdAuto.cpp.o: ../Token.h
+
+CMakeFiles/Project_1.dir/Interpreter.cpp.o: ../Database.h
+CMakeFiles/Project_1.dir/Interpreter.cpp.o: ../Header.h
+CMakeFiles/Project_1.dir/Interpreter.cpp.o: ../Interpreter.cpp
+CMakeFiles/Project_1.dir/Interpreter.cpp.o: ../Interpreter.h
+CMakeFiles/Project_1.dir/Interpreter.cpp.o: ../Parameter.h
+CMakeFiles/Project_1.dir/Interpreter.cpp.o: ../Predicate.h
+CMakeFiles/Project_1.dir/Interpreter.cpp.o: ../Relation.h
+CMakeFiles/Project_1.dir/Interpreter.cpp.o: ../Rule.h
+CMakeFiles/Project_1.dir/Interpreter.cpp.o: ../Tuple.h
+CMakeFiles/Project_1.dir/Interpreter.cpp.o: ../datalogProgram.h
 
 CMakeFiles/Project_1.dir/Lexer.cpp.o: ../AddAuto.h
 CMakeFiles/Project_1.dir/Lexer.cpp.o: ../Automaton.h
@@ -64,6 +84,11 @@ CMakeFiles/Project_1.dir/QueriesAuto.cpp.o: ../QueriesAuto.cpp
 CMakeFiles/Project_1.dir/QueriesAuto.cpp.o: ../QueriesAuto.h
 CMakeFiles/Project_1.dir/QueriesAuto.cpp.o: ../Token.h
 
+CMakeFiles/Project_1.dir/Relation.cpp.o: ../Header.h
+CMakeFiles/Project_1.dir/Relation.cpp.o: ../Relation.cpp
+CMakeFiles/Project_1.dir/Relation.cpp.o: ../Relation.h
+CMakeFiles/Project_1.dir/Relation.cpp.o: ../Tuple.h
+
 CMakeFiles/Project_1.dir/Rule.cpp.o: ../Parameter.h
 CMakeFiles/Project_1.dir/Rule.cpp.o: ../Predicate.h
 CMakeFiles/Project_1.dir/Rule.cpp.o: ../Rule.cpp
@@ -87,6 +112,9 @@ CMakeFiles/Project_1.dir/StringAuto.cpp.o: ../Token.h
 CMakeFiles/Project_1.dir/Token.cpp.o: ../Token.cpp
 CMakeFiles/Project_1.dir/Token.cpp.o: ../Token.h
 
+CMakeFiles/Project_1.dir/Tuple.cpp.o: ../Tuple.cpp
+CMakeFiles/Project_1.dir/Tuple.cpp.o: ../Tuple.h
+
 CMakeFiles/Project_1.dir/UndefinedAuto.cpp.o: ../Automaton.h
 CMakeFiles/Project_1.dir/UndefinedAuto.cpp.o: ../Token.h
 CMakeFiles/Project_1.dir/UndefinedAuto.cpp.o: ../UndefinedAuto.cpp
@@ -104,9 +132,12 @@ CMakeFiles/Project_1.dir/main.cpp.o: ../ColonAuto.h
 CMakeFiles/Project_1.dir/main.cpp.o: ../ColonDashAuto.h
 CMakeFiles/Project_1.dir/main.cpp.o: ../CommaAuto.h
 CMakeFiles/Project_1.dir/main.cpp.o: ../CommentAuto.h
+CMakeFiles/Project_1.dir/main.cpp.o: ../Database.h
 CMakeFiles/Project_1.dir/main.cpp.o: ../EOF_CPAuto.h
 CMakeFiles/Project_1.dir/main.cpp.o: ../FactsAuto.h
+CMakeFiles/Project_1.dir/main.cpp.o: ../Header.h
 CMakeFiles/Project_1.dir/main.cpp.o: ../IdAuto.h
+CMakeFiles/Project_1.dir/main.cpp.o: ../Interpreter.h
 CMakeFiles/Project_1.dir/main.cpp.o: ../LP_Auto.h
 CMakeFiles/Project_1.dir/main.cpp.o: ../Lexer.h
 CMakeFiles/Project_1.dir/main.cpp.o: ../MultAuto.h
@@ -117,11 +148,13 @@ CMakeFiles/Project_1.dir/main.cpp.o: ../Predicate.h
 CMakeFiles/Project_1.dir/main.cpp.o: ../Q_MarkAuto.h
 CMakeFiles/Project_1.dir/main.cpp.o: ../QueriesAuto.h
 CMakeFiles/Project_1.dir/main.cpp.o: ../RP_Auto.h
+CMakeFiles/Project_1.dir/main.cpp.o: ../Relation.h
 CMakeFiles/Project_1.dir/main.cpp.o: ../Rule.h
 CMakeFiles/Project_1.dir/main.cpp.o: ../RulesAuto.h
 CMakeFiles/Project_1.dir/main.cpp.o: ../SchemesAuto.h
 CMakeFiles/Project_1.dir/main.cpp.o: ../StringAuto.h
 CMakeFiles/Project_1.dir/main.cpp.o: ../Token.h
+CMakeFiles/Project_1.dir/main.cpp.o: ../Tuple.h
 CMakeFiles/Project_1.dir/main.cpp.o: ../UndefinedAuto.h
 CMakeFiles/Project_1.dir/main.cpp.o: ../datalogProgram.h
 CMakeFiles/Project_1.dir/main.cpp.o: ../main.cpp

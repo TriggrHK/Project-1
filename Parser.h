@@ -14,7 +14,7 @@ class Parser {
 private:
     int tokenIndex = 0;
     std::vector<Token*> tokens;
-    datalogProgram vectorList;
+    //datalogProgram vectorList;
     std::vector<Predicate> schemes;
     std::vector<Predicate> facts;
     std::vector<Rule> rules;
@@ -23,7 +23,7 @@ private:
 
 public:
     Parser(std::vector<Token*> tokenList);
-    void parse();
+    void parse(datalogProgram &fileStorage);
     void match(TokenType a);
     void parseScheme();
     void parseSchemeList();

@@ -33,4 +33,4 @@ add_executable(Project_1
         QueriesAuto.cpp
         RulesAuto.cpp
         SchemesAuto.cpp
-        StringAuto.cpp MultAuto.h AddAuto.h FactsAuto.cpp FactsAuto.h UndefinedAuto.cpp UndefinedAuto.h Parser.cpp Parser.h datalogProgram.cpp datalogProgram.h Parameter.cpp Parameter.h Predicate.cpp Predicate.h Rule.cpp Rule.h)
+        StringAuto.cpp MultAuto.h AddAuto.h FactsAuto.cpp FactsAuto.h UndefinedAuto.cpp UndefinedAuto.h Parser.cpp Parser.h datalogProgram.cpp datalogProgram.h Parameter.cpp Parameter.h Predicate.cpp Predicate.h Rule.cpp Rule.h Tuple.cpp Tuple.h Header.cpp Header.h Relation.cpp Relation.h Database.cpp Database.h Interpreter.cpp Interpreter.h)

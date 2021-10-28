@@ -108,6 +108,12 @@
 		<Unit filename="/users/guest/t/theath33/cs236/Project-1/CommentAuto.h">
 			<Option target="Project_1"/>
 		</Unit>
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/Database.cpp">
+			<Option target="Project_1"/>
+		</Unit>
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/Database.h">
+			<Option target="Project_1"/>
+		</Unit>
 		<Unit filename="/users/guest/t/theath33/cs236/Project-1/EOF_CPAuto.h">
 			<Option target="Project_1"/>
 		</Unit>
@@ -117,10 +123,22 @@
 		<Unit filename="/users/guest/t/theath33/cs236/Project-1/FactsAuto.h">
 			<Option target="Project_1"/>
 		</Unit>
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/Header.cpp">
+			<Option target="Project_1"/>
+		</Unit>
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/Header.h">
+			<Option target="Project_1"/>
+		</Unit>
 		<Unit filename="/users/guest/t/theath33/cs236/Project-1/IdAuto.cpp">
 			<Option target="Project_1"/>
 		</Unit>
 		<Unit filename="/users/guest/t/theath33/cs236/Project-1/IdAuto.h">
+			<Option target="Project_1"/>
+		</Unit>
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/Interpreter.cpp">
+			<Option target="Project_1"/>
+		</Unit>
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/Interpreter.h">
 			<Option target="Project_1"/>
 		</Unit>
 		<Unit filename="/users/guest/t/theath33/cs236/Project-1/LP_Auto.h">
@@ -168,6 +186,12 @@
 		<Unit filename="/users/guest/t/theath33/cs236/Project-1/RP_Auto.h">
 			<Option target="Project_1"/>
 		</Unit>
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/Relation.cpp">
+			<Option target="Project_1"/>
+		</Unit>
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/Relation.h">
+			<Option target="Project_1"/>
+		</Unit>
 		<Unit filename="/users/guest/t/theath33/cs236/Project-1/Rule.cpp">
 			<Option target="Project_1"/>
 		</Unit>
@@ -196,6 +220,12 @@
 			<Option target="Project_1"/>
 		</Unit>
 		<Unit filename="/users/guest/t/theath33/cs236/Project-1/Token.h">
+			<Option target="Project_1"/>
+		</Unit>
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/Tuple.cpp">
+			<Option target="Project_1"/>
+		</Unit>
+		<Unit filename="/users/guest/t/theath33/cs236/Project-1/Tuple.h">
 			<Option target="Project_1"/>
 		</Unit>
 		<Unit filename="/users/guest/t/theath33/cs236/Project-1/UndefinedAuto.cpp">

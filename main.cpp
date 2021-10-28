@@ -1,7 +1,9 @@
 #include "Lexer.h"
-#include <fstream>
-#include <iostream>
 #include "Parser.h"
+#include "Interpreter.h"
+#include <iostream>
+#include <fstream>
+
 
 int main(int argc, char** argv) {
     std::string inputLines;
@@ -20,13 +22,16 @@ int main(int argc, char** argv) {
     }
 
     auto* lexer = new Lexer();
-
-    // TODO
     lexer->Run(inputLines);
+
     auto parser = new Parser(lexer->getTokenList());
-    parser->parse();
-    // get the tokens from lexer and output in the right format
-   // std::cout << "Did it!";
+    datalogProgram datalog = datalogProgram();
+    parser->parse(datalog);
+
+    auto relations = Database();
+    auto interpreter = Interpreter(datalog, relations);
+    interpreter.Run();
+    std::cout << "Did it!";
     delete lexer;
     delete parser;
     return 0;

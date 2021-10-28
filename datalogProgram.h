@@ -7,18 +7,22 @@
 #include <vector>
 #include "Rule.h"
 
-
 class datalogProgram {
 private:
-    std::vector<Parameter> params;
     std::vector<Rule> rules;
-    std::vector<Predicate> predics;
+    std::vector<Predicate> schemes;
+    std::vector<Predicate> facts;
+    std::vector<Predicate> queries;
 public:
-    datalogProgram();
-  //  void add_Vector(Parameter inParm);
-   // void add_Vector(Rule inRule);
-   // void add_Vector(Predicate inPred);
-  //  void to_String();
+    datalogProgram(){}
+    void copy_rule(std::vector<Rule> newRules);
+    void copy_scheme(std::vector<Predicate> newSchemes);
+    void copy_fact(std::vector<Predicate> newFacts);
+    void copy_query(std::vector<Predicate> newQueries);
+    std::vector<Rule> getRules();
+    std::vector<Predicate> getSchemes();
+    std::vector<Predicate> getFacts();
+    std::vector<Predicate> getQueries();
 };
 
 
