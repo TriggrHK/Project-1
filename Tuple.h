@@ -11,7 +11,7 @@ class Tuple {
 private:
     std::vector<std::string> values;
 public:
-    Tuple();
+    Tuple(){}
     Tuple(std::vector<std::string> newValues){
         values = newValues;
     }
@@ -24,6 +24,9 @@ public:
             allVals = allVals + " " + values[i];
         }
         return allVals;
+    }
+    std::string getString(int index){
+        return values[index];
     }
 };
 

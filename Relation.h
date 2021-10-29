@@ -18,12 +18,12 @@ public:
     Relation(std::string newName, Header newHeader);
     void addTuple(Tuple newTuple);
     void toString();
-/*
+    void setTuples(std::set<Tuple> newList);
+    int getNumTuples();
     Relation select(int index, std::string value);//column and value to select
     Relation select(int index,  int index2);//relation columns to select on same values
-    Relation project(std::vector<std::string> indices);//set columns to keep
+    Relation project(std::vector<int> indices);//set columns to keep
     Relation rename(std::vector<std::string> attributes); //define new header
-*/
 };
 
 

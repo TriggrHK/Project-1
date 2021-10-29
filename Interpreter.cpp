@@ -18,6 +18,7 @@ Interpreter::Interpreter(datalogProgram newParse, Database newRelations){
         //add to relation (vector of them?)
         relations.addTuple(facts[i].getID(), facts[i].getStringVect());
     }
+//    std::cout << "\n" << "Number of Relations is = " << relations.getSize() << "\n";
 }
 
 
@@ -36,17 +37,54 @@ void Interpreter::Run() {
     std::cout << "facts size is " << facts.size() << "\n";
     std::cout << "queries size is " << queries.size() << "\n";
 */
+    std::cout << "\n" << "Number of Relations is = " << relations.getSize() << "\n";
 
-   // for(unsigned int i = 0; i < queries.size(); i++){
-        /*get the relation ‘r’ with the same name as the query ‘q’
-            select for each constant in the query ‘q’
-            select for each pair of matching variables in ‘q’
-            project using the positions of the variables in ‘q’
-            rename to match the names of variables in ‘q’
-            print the resulting relation*/
-   // }
+    for(unsigned int k = 0; k < queries.size(); k++) {
+        std::map<std::string, int> savedVars;
+        std::vector<Parameter> tempList = queries[k].getParamVect();
+        Relation compareRel = relations.getRelation(queries[k].getID());
+        for (unsigned int i = 0; i < tempList.size(); i++) {
+            if (tempList[i].isConst()) {
+                //save to do type one project
+                compareRel = compareRel.select(i, tempList[i].getParam()); ///do we want i?
+            } else if (savedVars.find(tempList[i].getParam()) == savedVars.end()) {
+                savedVars[tempList[i].getParam()] = i; ///i dunno about this one
+                compareRel = compareRel.select(i, i + 1); ///do we want i?
+            } else {
+                //mark it to keep for the project and rename
+            }
+        }
+        ///print function
+        queries[k].to_String();
+        std::cout << "? ";
+        if (compareRel.getNumTuples() > 0) {
+            std::cout << "Yes(" << compareRel.getNumTuples() << ")\n";
+            for (unsigned int j = 0; j < compareRel.getNumTuples(); j++) {
+                std::cout << "\t" << queries[k].getStringAt(j) << "=";
+                //get value to go on side of equals
+                std::cout << "\n";
+            }
+        } else {
+            std::cout << "No\n";
+        }
+
+
+        Relation tempRel = evaluatePredicate(queries[k]);
+
+/*get the relation ‘r’ with the same name as the query ‘q’
+                   select for each constant in the query ‘q’
+                   select for each pair of matching variables in ‘q’
+                   project using the positions of the variables in ‘q’
+                   rename to match the names of variables in ‘q’
+                   print the resulting relation*/
+
+    }
+
 return;
 }
+
+
+
 
 /*
 for each scheme ‘s’

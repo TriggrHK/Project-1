@@ -10,7 +10,13 @@ void Database::addRelation(std::string name, Relation newRelation){
 }
 void Database::addTuple(std::string name, std::vector<std::string> tuples){
     Tuple newT = Tuple(tuples);
+    Relation newRel = database[name];
+    newRel.addTuple(newT);
+    database[name] = newRel; ///this line breaks it
+    //newRel.toString();
+}
+
+Relation Database::getRelation(std::string name){
     Relation r = database[name];
-    r.addTuple(newT);
-    r.toString();
+    return r;
 }

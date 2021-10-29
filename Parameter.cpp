@@ -9,3 +9,11 @@ void Parameter::to_String() {
 std::string Parameter::getParam() {
     return param;
 }
+bool Parameter::isConst() {
+    if(param[0] == '\''){
+        return true;
+    }
+    else{
+        return false;
+    }
+}

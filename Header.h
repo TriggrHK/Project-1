@@ -15,6 +15,9 @@ public:
     Header(std::vector<std::string> newHeader){
         attributes = newHeader;
     }
+    std::string getColumn(int index){
+        return attributes[index];
+    }
 };
 
 

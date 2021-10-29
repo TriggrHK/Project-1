@@ -21,6 +21,10 @@ void Predicate::to_String() {
 std::string Predicate::getID(){
     return predID;
 }
+std::string Predicate::getStringAt(int index){
+    return predParameter[index].getParam();
+}
+
 std::vector<std::string> Predicate::getStringVect(){
     std::vector<std::string> newString;
     for(unsigned int i = 0; i < predParameter.size(); i++){
@@ -28,3 +32,8 @@ std::vector<std::string> Predicate::getStringVect(){
     }
     return newString;
 }
+
+std::vector<Parameter> Predicate::getParamVect(){
+    return predParameter;
+}
+

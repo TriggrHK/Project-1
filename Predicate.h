@@ -18,6 +18,8 @@ public:
     void to_String();
     std::string getID();
     std::vector<std::string> getStringVect();
+    std::vector<Parameter> getParamVect();
+    std::string getStringAt(int index);
 };
 
 #endif //PROJECT_1_PREDICATE_H
