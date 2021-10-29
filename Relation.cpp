@@ -18,7 +18,19 @@ void Relation::addTuple(Tuple newTuple){
 
 void Relation::toString(){
     for(Tuple t: relationList){
-        std::cout << t.toString(); //add toString for the Tuple
+        for(int i = 0; i < header.getSize(); i++){
+            if(i == 0){
+                std::cout << "  ";
+            }
+            if (header.getColumn(i) != t.toString(i)) {
+                std::cout << header.getColumn(i) << "=" << t.toString(i);
+                if(i + 1 != header.getSize() ){
+                    std::cout << ", ";
+                } else{
+                    std::cout << "\n";
+                }
+            }
+        }
     }
 }
 

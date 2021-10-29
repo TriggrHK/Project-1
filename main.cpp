@@ -31,7 +31,7 @@ int main(int argc, char** argv) {
     auto relations = Database();
     auto interpreter = Interpreter(datalog, relations);
     interpreter.Run();
-    std::cout << "Did it!";
+   // std::cout << "Did it!";
     delete lexer;
     delete parser;
     return 0;

@@ -18,6 +18,9 @@ public:
     std::string getColumn(int index){
         return attributes[index];
     }
+    int getSize(){
+        return attributes.size();
+    }
 };
 
 

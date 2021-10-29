@@ -25,8 +25,15 @@ public:
         }
         return allVals;
     }
+    std::string toString(int index){
+        std::string allVals = "";
+        allVals =values[index];
+        return allVals;
+    }
+
     std::string getString(int index){
-        return values[index];
+        std::string tempString = values[index];
+        return tempString;
     }
 };
 
