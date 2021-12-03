@@ -11,7 +11,8 @@ void Database::addRelation(std::string name, Relation newRelation){
 void Database::addTuple(std::string name, std::vector<std::string> tuples){
     Tuple newT = Tuple(tuples);
     Relation newRel = database[name];
-    newRel.addTuple(newT);
+    bool didInsert = false;
+    newRel.addTuple(newT, didInsert);
     database.erase(name);
     database.insert({name, newRel});
     //newRel.toString();

@@ -6,12 +6,16 @@
 Interpreter::Interpreter(datalogProgram newParse, Database newRelations){
     parsedData = newParse;
     relations = newRelations;
+    rules = parsedData.getRules();
     schemes = parsedData.getSchemes();
     facts = parsedData.getFacts();
     queries = parsedData.getQueries();
 
-    for(unsigned int i = 0; i < schemes.size(); i++){
+    /*for(unsigned int i = 0; i < schemes.size(); i++){
         relations.addRelation(schemes[i].getID(), evaluatePredicate(schemes[i]));
+    }*/
+    for(unsigned int i = 0; i < schemes.size(); i++) {
+        relations.addRelation(schemes[i].getID(), createPredicates(schemes[i]));
     }
     for(unsigned int i = 0; i < facts.size(); i++){
         //make a tuple then add to relation that has it's name
@@ -21,8 +25,19 @@ Interpreter::Interpreter(datalogProgram newParse, Database newRelations){
 //    std::cout << "\n" << "Number of Relations is = " << relations.getSize() << "\n";
 }
 
+//Relation evaluateRule{ do{}while(addedTuple == True);
 
-Relation Interpreter::evaluatePredicate(const Predicate& p){
+void Interpreter::Run() {
+    //  std::cout << "scheme size is " << schemes.size() << "\n"; std::cout << "facts size is " << facts.size() << "\n"; std::cout << "queries size is " << queries.size() << "\n"; std::cout << "\n" << "Number of Relations is = " << relations.getSize() << "\n";
+
+    std::cout << "Rule Evaluation\n";
+    evaluateRules();
+    std::cout << "Query Evaluation\n";
+    evaluateQueries();
+    return;
+}
+
+Relation Interpreter::createPredicates(const Predicate& p){
     Predicate tempPred = p;
     std::string name = tempPred.getID();
     std::vector<std::string> headerValues = tempPred.getStringVect();
@@ -31,14 +46,112 @@ Relation Interpreter::evaluatePredicate(const Predicate& p){
     return newRelation;
 }
 
-void Interpreter::Run() {
-/*
-    std::cout << "scheme size is " << schemes.size() << "\n";
-    std::cout << "facts size is " << facts.size() << "\n";
-    std::cout << "queries size is " << queries.size() << "\n";
-*/
-    //std::cout << "\n" << "Number of Relations is = " << relations.getSize() << "\n";
+Relation Interpreter::evaluatePredicate(Predicate p, Relation compareRel) {
+    std::map<std::string, int> savedVars;
+    std::vector<Parameter> tempList = p.getParamVect();
+    std::vector<int> seenCol;
+    bool didInsert;
+    for (unsigned int i = 0; i < tempList.size(); i++) {
+        if (tempList[i].isConst()) {
+            compareRel = compareRel.select(i, tempList[i].getParam(),didInsert);
+        } else if (i < tempList.size()) {
+            if(savedVars.find(tempList[i].getParam()) == savedVars.end()){
+                seenCol.push_back(i);
+                savedVars[tempList[i].getParam()] = i;
+            }
+            compareRel = compareRel.select(savedVars[tempList[i].getParam()], i, didInsert);
+        }
+    }
+    compareRel = compareRel.rename(p.getStringVect());
+    compareRel = compareRel.project(seenCol, didInsert);
+    return compareRel;
+}
 
+void Interpreter::evaluateRules(){
+    bool changedRule = false;
+    int iterationCount = 0;
+    do {
+        changedRule = false;
+        bool testB = false;
+        for (unsigned int i = 0; i < rules.size(); i++) {
+            rules[i].to_String();
+            std::vector<Relation> intermediateResults;
+            Relation stepTwoResult;
+            std::vector<Predicate> tempPred = rules[i].getRightHand();
+            for (unsigned int k = 0; k < tempPred.size(); k++) {
+                Relation compareRel = relations.getRelation(tempPred[k].getID());
+                compareRel = evaluatePredicate(tempPred[k], compareRel);
+                intermediateResults.push_back(compareRel);
+                ///step two join the relations
+                if(intermediateResults.size() > 1){
+                        stepTwoResult = intermediateResults[0].join(intermediateResults[1], testB);
+                    for(unsigned int j = 2; j < intermediateResults.size(); j++){
+                        stepTwoResult = stepTwoResult.join(intermediateResults[j], testB);
+                    }
+                }
+                ///if only one relation
+                else{
+                    stepTwoResult = intermediateResults[0];
+                }
+                ///project the result
+                std::vector<int> seenCol;
+                for(unsigned int g = 0; g < stepTwoResult.getHeader().getSize(); g++){
+                    for(unsigned int h = 0; h < rules[i].getHead().getParamSize(); h++){
+                        if(stepTwoResult.getHeader().getColumn(g) == rules[i].getHead().getStringAt(h)){
+                            seenCol.push_back(g);
+                        }
+                    }
+                }
+                stepTwoResult.project(seenCol, testB);
+                ///rename
+                ///union
+                stepTwoResult.unionize(relations.getRelation(stepTwoResult.getName()), changedRule);
+                ///print function
+             //   tempPred[k].to_String();
+/*
+                if(iterationCount == 0) {
+                    std::cout << "\n";
+                }
+*/
+                /*if (compareRel.getNumTuples() > 0) {
+                    compareRel.toString();
+                }*/
+            }
+        }
+        iterationCount++;
+        if(iterationCount > 2){changedRule = false;}
+    }while(changedRule);
+    std::cout << "\nSchemes populated after " << iterationCount << " passes through the Rules.\n\n";
+}
+
+void Interpreter::evaluateQueries(){
+    for(unsigned int k = 0; k < queries.size(); k++) {
+        Relation compareRel = relations.getRelation(queries[k].getID());
+        compareRel = evaluatePredicate(queries[k],compareRel);
+        ///print function
+        queries[k].to_String();
+        std::cout << "? ";
+        if (compareRel.getNumTuples() > 0) {
+            std::cout << "Yes(" << compareRel.getNumTuples() << ")\n";
+            compareRel.toString();
+        } else {
+            std::cout << "No\n";
+        }
+    }
+}
+
+
+
+/*Relation Interpreter::evaluatePredicate(const Predicate& p){
+    Predicate tempPred = p;
+    std::string name = tempPred.getID();
+    std::vector<std::string> headerValues = tempPred.getStringVect();
+    Header newHeader = Header(headerValues);
+    Relation newRelation = Relation(name, newHeader);
+    return newRelation;
+}
+
+void Interpreter::evaluateQueries(){
     for(unsigned int k = 0; k < queries.size(); k++) {
         std::map<std::string, int> savedVars;
         std::vector<Parameter> tempList = queries[k].getParamVect();
@@ -50,17 +163,10 @@ void Interpreter::Run() {
                 compareRel = compareRel.select(i, tempList[i].getParam()); ///do we want i?
             } else if (i < tempList.size()) {
                 if(savedVars.find(tempList[i].getParam()) == savedVars.end()){
-                seenCol.push_back(i);
-                savedVars[tempList[i].getParam()] = i;
+                    seenCol.push_back(i);
+                    savedVars[tempList[i].getParam()] = i;
                 }
                 compareRel = compareRel.select(savedVars[tempList[i].getParam()], i);
-                /*
-                if(!tempList[i+1].isConst() && (tempList[i].getParam() == tempList[i+1].getParam())){
-                    compareRel= compareRel.select(i, i+1);
-                } ///do we want i?
-                else if (!tempList[i+1].isConst()){
-                    compareRel= compareRel.select(i, i);
-                }*/
             }
         }
         compareRel = compareRel.rename(queries[k].getStringVect());
@@ -71,43 +177,8 @@ void Interpreter::Run() {
         if (compareRel.getNumTuples() > 0) {
             std::cout << "Yes(" << compareRel.getNumTuples() << ")\n";
             compareRel.toString();
-            //std::cout << "\n";
-/*
-            for (unsigned int j = 0; j < compareRel.getNumTuples(); j++) {
-                std::cout << "\t" << queries[k].getStringAt(j) << "=";
-                //get value to go on side of equals
-                std::cout << "\n";
-            }
-*/
         } else {
             std::cout << "No\n";
         }
-        //Relation tempRel = evaluatePredicate(queries[k]);
-/*get the relation ‘r’ with the same name as the query ‘q’
-                   select for each constant in the query ‘q’
-                   select for each pair of matching variables in ‘q’
-                   project using the positions of the variables in ‘q’
-                   rename to match the names of variables in ‘q’
-                   print the resulting relation*/
-
     }
-return;
-}
-
-
-
-
-/*
-for each scheme ‘s’
-create a relation using name and parameter values from ‘s’
-for each fact ‘f’
-make a tuple ‘t’ using the values from ‘f’
-add ‘t’ to relation with the same name as ‘f’
-for each query ‘q’
-get the relation ‘r’ with the same name as the query ‘q’
-select for each constant in the query ‘q’
-select for each pair of matching variables in ‘q’
-project using the positions of the variables in ‘q’
-rename to match the names of variables in ‘q’
-print the resulting relatio
- */
+}*/

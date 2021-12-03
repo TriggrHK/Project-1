@@ -27,13 +27,31 @@ public:
     }
     std::string toString(int index){
         std::string allVals = "";
-        allVals =values[index];
+        allVals = values[index];
         return allVals;
     }
-
+    std::vector<std::string> getValues(){
+        return values;
+    }
     std::string getString(int index){
         std::string tempString = values[index];
         return tempString;
+    }
+    bool match(Tuple input, std::vector<int> leftMatch, std::vector<int> rightMatch){
+        for(unsigned int i = 0; i < leftMatch.size(); i++){
+            if(!(values[leftMatch[i]] == input.values[rightMatch[i]])){
+                return false;
+            }
+        }
+        return true;
+    }
+    Tuple combineTuples(Tuple input, std::vector<int> noMatch){
+        std::vector<std::string> tempVals = values;
+        for(unsigned int i = 0; i < noMatch.size(); i++){
+            tempVals.push_back(input.getString(noMatch[i]));
+        }
+        Tuple t = Tuple(tempVals);
+        return t;
     }
 };
 

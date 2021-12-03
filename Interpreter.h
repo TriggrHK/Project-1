@@ -15,11 +15,15 @@ private:
     std::vector<Predicate> schemes;
     std::vector<Predicate> facts;
     std::vector<Predicate> queries;
+    std::vector<Rule> rules;
 public:
     Interpreter(){}
     Interpreter(datalogProgram newParse, Database newRelations);
     void Run();
-    Relation evaluatePredicate(const Predicate& p);
+    Relation evaluatePredicate(Predicate p, Relation compareRel);
+    Relation createPredicates(const Predicate& p);
+    void evaluateRules();
+    void evaluateQueries();
 };
 
 

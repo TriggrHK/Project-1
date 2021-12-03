@@ -13,6 +13,8 @@ private:
     std::vector<Predicate> bodyPredicates;
 public:
     Rule(Predicate inPred, std::vector<Predicate> inPredVector);
+    std::vector<Predicate> getRightHand();
+    Predicate getHead();
     void to_String();
 };
 

@@ -37,3 +37,7 @@ std::vector<Parameter> Predicate::getParamVect(){
     return predParameter;
 }
 
+int Predicate::getParamSize() {
+    return predParameter.size();
+}
+
