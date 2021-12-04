@@ -14,8 +14,8 @@ Header Relation::getHeader(){
 int Relation::getNumTuples() {
     return relationList.size();
 }
-void Relation::addTuple(Tuple newTuple, bool &didInsert){
-    didInsert = relationList.insert(newTuple).second;
+void Relation::addTuple(Tuple newTuple){
+    relationList.insert(newTuple);
 }
 
 void Relation::toString(){
@@ -47,29 +47,29 @@ std::string Relation::getName() {
     return name;
 }
 
-Relation Relation::select(int index, std::string value, bool &didInsert){
+Relation Relation::select(int index, std::string value){
     //column and value to select
     Relation tempRel = Relation(this->name, this->header);
     for(Tuple t: relationList){
         if(t.getString(index) == value){
-            tempRel.addTuple(t, didInsert);
+            tempRel.addTuple(t);
         }
     }
     return tempRel;
 }
 
-Relation Relation::select(int index,  int index2, bool &didInsert){
+Relation Relation::select(int index,  int index2){
     //relation columns to select on same values
     Relation tempRel = Relation(this->name, this->header);
     for(Tuple t: relationList){
         if(t.getString(index) == t.getString(index2)){
-            tempRel.addTuple(t, didInsert);
+            tempRel.addTuple(t);
         }
     }
     return tempRel;
 }
 
-Relation Relation::project(std::vector<int> indices, bool &didInsert){
+Relation Relation::project(std::vector<int> indices){
     //set columns to keep
     std::vector<std::string> projectHead;
     for(unsigned int i = 0; i < indices.size(); i++){
@@ -83,7 +83,7 @@ Relation Relation::project(std::vector<int> indices, bool &didInsert){
             tempString.push_back(t.getString(indices[i]));
         }
         Tuple tempT = Tuple(tempString);
-        tempRel.addTuple(tempT, didInsert);
+        tempRel.addTuple(tempT);
     }
     return tempRel;
 }
@@ -96,18 +96,24 @@ Relation Relation::rename(std::vector<std::string> attributes){
     return tempRel;
 }
 void Relation::unionize(Relation combineWith, bool &didInsert){
-    //perform union on two relations
     for(Tuple t: combineWith.getTuples()){
         if(relationList.insert(t).second){
-            //relationList.insert(t);
-            std::cout << t.toString() << "\n";
+            std::cout << "  ";
+            for(unsigned int i = 0; i < t.getValues().size(); i++){
+                std::cout << this->getHeader().getColumn(i) << "=" << t.toString(i);
+                if(i+1 != t.getValues().size()){
+                    std::cout << ", ";
+                }
+            }
+            std::cout << "\n";
+            //std::cout << t.toString() << "\n";
             didInsert = true;
         }
     }
 }
 
 //calculate once which headers are similar for join?
-Relation Relation::join(Relation combineWith, bool &didInsert) {
+Relation Relation::join(Relation combineWith) {
     std::vector<int> leftMatch;
     std::vector<int> rightMatch;
     std::vector<int> noMatch;
@@ -120,7 +126,7 @@ Relation Relation::join(Relation combineWith, bool &didInsert) {
         for (Tuple t2: combineList) {
             if (t1.match(t2, leftMatch, rightMatch)){ //use matching columns and make sure both work
                 Tuple t = t1.combineTuples(t2, noMatch); //combine by using all left and non matching columns right
-                tempRel.addTuple(t, didInsert);
+                tempRel.addTuple(t);
             }
         }
     }

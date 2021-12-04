@@ -15,7 +15,7 @@ public:
     void addRelation(std::string name, Relation newRelation);
     void addTuple(std::string name, std::vector<std::string> tuples);
     //addRow?
-    Relation getRelation(std::string name);
+    Relation& getRelation(std::string name);
     int getSize(){
         return database.size();
     }

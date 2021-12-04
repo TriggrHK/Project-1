@@ -11,14 +11,12 @@ void Database::addRelation(std::string name, Relation newRelation){
 void Database::addTuple(std::string name, std::vector<std::string> tuples){
     Tuple newT = Tuple(tuples);
     Relation newRel = database[name];
-    bool didInsert = false;
-    newRel.addTuple(newT, didInsert);
+    newRel.addTuple(newT);
     database.erase(name);
     database.insert({name, newRel});
     //newRel.toString();
 }
 
-Relation Database::getRelation(std::string name){
-    Relation r = database[name];
-    return r;
+Relation& Database::getRelation(std::string name){
+    return database[name];
 }

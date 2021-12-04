@@ -37,8 +37,8 @@ public:
                 }
             }
         }
-        for(int i = 0; i < right.size(); i++){
-            for(int j = 0; j < noMatch.size(); j++){
+        for(unsigned int i = 0; i < right.size(); i++){
+            for(unsigned int j = 0; j < noMatch.size(); j++){
                 if(right[i] == noMatch[j]){
                     noMatch.erase(noMatch.begin()+j);
                 }
@@ -50,7 +50,7 @@ public:
         std::vector<std::string> tempVect = attributes;
         for(int i = 0; i < combineWith.getSize(); i++){
             bool matches = false;
-            for(int j = 0; j < tempVect.size(); j++){ ///is this going to work?
+            for(unsigned int j = 0; j < tempVect.size(); j++){ ///is this going to work?
                 if(tempVect[j] == combineWith.getColumn(i)){
                     matches = true;
                 }
